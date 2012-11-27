@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.2/Umlnotation" xmi:id="_3CxJ4CfaEeKZYLteadf7lA" type="Class" name="classdiagram.dnx">
+  <eAnnotations xmi:id="_3CxJ4ifaEeKZYLteadf7lA" source="com.ibm.xtools.common.ui.reduction.editingCapabilities">
+    <details xmi:id="_3Cxw8CfaEeKZYLteadf7lA" key="com.ibm.xtools.activities.javaVisualizerActivity" value="1"/>
+  </eAnnotations>
+  <children xmi:id="_4DgOICfaEeKZYLteadf7lA">
+    <children xmi:id="_4Dg1MCfaEeKZYLteadf7lA" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_4Dg1MSfaEeKZYLteadf7lA" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_4DhcQCfaEeKZYLteadf7lA" type="Stereotype"/>
+    <children xmi:id="_4DhcQSfaEeKZYLteadf7lA" type="Name"/>
+    <children xmi:id="_4DiqYCfaEeKZYLteadf7lA" type="Parent"/>
+    <children xmi:id="_4DjRcCfaEeKZYLteadf7lA" visible="false" type="ANNOTATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_4DjRcSfaEeKZYLteadf7lA"/>
+    </children>
+    <children xmi:id="_4DlGoCfaEeKZYLteadf7lA" type="ANNOTATED_ATTRIBUTE_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_4DlGoSfaEeKZYLteadf7lA"/>
+    </children>
+    <children xmi:id="_4DlGoifaEeKZYLteadf7lA" type="ANNOTATED_OPERATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_4DlGoyfaEeKZYLteadf7lA"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_4DgOISfaEeKZYLteadf7lA" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=Animals%5Bjcu%5Ename=Animals.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEGame%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4DgOIifaEeKZYLteadf7lA" x="6657" y="1585"/>
+  </children>
+  <children xmi:id="_49rXYCfaEeKZYLteadf7lA">
+    <children xmi:id="_49slgCfaEeKZYLteadf7lA" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_49slgSfaEeKZYLteadf7lA" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_49tMkCfaEeKZYLteadf7lA" type="Stereotype"/>
+    <children xmi:id="_49tMkSfaEeKZYLteadf7lA" type="Name"/>
+    <children xmi:id="_49tMkifaEeKZYLteadf7lA" type="Parent"/>
+    <children xmi:id="_49tzoCfaEeKZYLteadf7lA" visible="false" type="ANNOTATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_49tzoSfaEeKZYLteadf7lA"/>
+    </children>
+    <children xmi:id="_49wP4CfaEeKZYLteadf7lA" type="ANNOTATED_ATTRIBUTE_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_49wP4SfaEeKZYLteadf7lA"/>
+    </children>
+    <children xmi:id="_49wP4ifaEeKZYLteadf7lA" type="ANNOTATED_OPERATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_49wP4yfaEeKZYLteadf7lA"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_49rXYSfaEeKZYLteadf7lA" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=AnimalWeaponMapper%5Bjcu%5Ename=AnimalWeaponMapper.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEGame%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_49rXYifaEeKZYLteadf7lA" x="14265" y="8242"/>
+  </children>
+  <children xmi:id="_7NF1QCfaEeKZYLteadf7lA">
+    <children xmi:id="_7NSpkCfaEeKZYLteadf7lA" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_7NSpkSfaEeKZYLteadf7lA" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_7NTQoCfaEeKZYLteadf7lA" type="Stereotype"/>
+    <children xmi:id="_7NTQoSfaEeKZYLteadf7lA" type="Name"/>
+    <children xmi:id="_7NUewCfaEeKZYLteadf7lA" type="Parent"/>
+    <children xmi:id="_7NUewSfaEeKZYLteadf7lA" visible="false" type="ANNOTATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_7NUewifaEeKZYLteadf7lA"/>
+    </children>
+    <children xmi:id="_7NWT8CfaEeKZYLteadf7lA" type="ANNOTATED_ATTRIBUTE_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_7NWT8SfaEeKZYLteadf7lA"/>
+    </children>
+    <children xmi:id="_7NWT8ifaEeKZYLteadf7lA" type="ANNOTATED_OPERATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_7NWT8yfaEeKZYLteadf7lA"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_7NF1QSfaEeKZYLteadf7lA" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=GameTimer%5Bjcu%5Ename=GameTimer.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEGame%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7NF1QifaEeKZYLteadf7lA" x="18386" y="-3170"/>
+  </children>
+  <children xmi:id="_70ZF0CfaEeKZYLteadf7lA">
+    <children xmi:id="_70Zs4CfaEeKZYLteadf7lA" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_70Zs4SfaEeKZYLteadf7lA" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_70aT8CfaEeKZYLteadf7lA" type="Stereotype"/>
+    <children xmi:id="_70biECfaEeKZYLteadf7lA" type="Name"/>
+    <children xmi:id="_70biESfaEeKZYLteadf7lA" type="Parent"/>
+    <children xmi:id="_70cJICfaEeKZYLteadf7lA" visible="false" type="ANNOTATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_70cJISfaEeKZYLteadf7lA"/>
+    </children>
+    <children xmi:id="_70dXQCfaEeKZYLteadf7lA" type="ANNOTATED_ATTRIBUTE_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_70dXQSfaEeKZYLteadf7lA"/>
+    </children>
+    <children xmi:id="_70dXQifaEeKZYLteadf7lA" type="ANNOTATED_OPERATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_70dXQyfaEeKZYLteadf7lA"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_70ZF0SfaEeKZYLteadf7lA" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=Level1Controller%5Bjcu%5Ename=Level1Controller.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEGame%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_70ZF0ifaEeKZYLteadf7lA" x="1902" y="22507"/>
+  </children>
+  <children xmi:id="_8X73wCfaEeKZYLteadf7lA">
+    <children xmi:id="_8X8e0CfaEeKZYLteadf7lA" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_8X8e0SfaEeKZYLteadf7lA" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_8X9F4CfaEeKZYLteadf7lA" type="Stereotype"/>
+    <children xmi:id="_8X9F4SfaEeKZYLteadf7lA" type="Name"/>
+    <children xmi:id="_8X9F4ifaEeKZYLteadf7lA" type="Parent"/>
+    <children xmi:id="_8X9F4yfaEeKZYLteadf7lA" visible="false" type="ANNOTATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_8X9F5CfaEeKZYLteadf7lA"/>
+    </children>
+    <children xmi:id="_8X-7ECfaEeKZYLteadf7lA" type="ANNOTATED_ATTRIBUTE_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_8X-7ESfaEeKZYLteadf7lA"/>
+    </children>
+    <children xmi:id="_8X-7EifaEeKZYLteadf7lA" type="ANNOTATED_OPERATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_8X-7EyfaEeKZYLteadf7lA"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_8X73wSfaEeKZYLteadf7lA" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=Level2Controller%5Bjcu%5Ename=Level2Controller.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEGame%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8X73wifaEeKZYLteadf7lA" x="6551" y="22507"/>
+  </children>
+  <children xmi:id="_9ZjFwCfaEeKZYLteadf7lA">
+    <children xmi:id="_9Zjs0CfaEeKZYLteadf7lA" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_9Zjs0SfaEeKZYLteadf7lA" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_9Zjs0ifaEeKZYLteadf7lA" type="Stereotype"/>
+    <children xmi:id="_9Zjs0yfaEeKZYLteadf7lA" type="Name"/>
+    <children xmi:id="_9ZkT4CfaEeKZYLteadf7lA" type="Parent"/>
+    <children xmi:id="_9ZkT4SfaEeKZYLteadf7lA" visible="false" type="ANNOTATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_9ZkT4ifaEeKZYLteadf7lA"/>
+    </children>
+    <children xmi:id="_9ZliACfaEeKZYLteadf7lA" type="ANNOTATED_ATTRIBUTE_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_9ZliASfaEeKZYLteadf7lA"/>
+    </children>
+    <children xmi:id="_9ZmJECfaEeKZYLteadf7lA" type="ANNOTATED_OPERATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_9ZmJESfaEeKZYLteadf7lA"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_9ZjFwSfaEeKZYLteadf7lA" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=LevelController%5Bjcu%5Ename=LevelController.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEGame%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9ZjFwifaEeKZYLteadf7lA" x="2853" y="9193"/>
+  </children>
+  <children xmi:id="_E_Zc0CfbEeKZYLteadf7lA">
+    <children xmi:id="_E_aD4CfbEeKZYLteadf7lA" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_E_aD4SfbEeKZYLteadf7lA" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_E_aq8CfbEeKZYLteadf7lA" type="Stereotype"/>
+    <children xmi:id="_E_aq8SfbEeKZYLteadf7lA" type="Name"/>
+    <children xmi:id="_E_aq8ifbEeKZYLteadf7lA" type="Parent"/>
+    <children xmi:id="_E_aq8yfbEeKZYLteadf7lA" visible="false" type="ANNOTATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_E_aq9CfbEeKZYLteadf7lA"/>
+    </children>
+    <children xmi:id="_E_b5ECfbEeKZYLteadf7lA" type="ANNOTATED_ATTRIBUTE_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_E_b5ESfbEeKZYLteadf7lA"/>
+    </children>
+    <children xmi:id="_E_b5EifbEeKZYLteadf7lA" type="ANNOTATED_OPERATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_E_b5EyfbEeKZYLteadf7lA"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_E_Zc0SfbEeKZYLteadf7lA" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=LevelFactory%5Bjcu%5Ename=LevelFactory.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEGame%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_E_Zc0ifbEeKZYLteadf7lA" x="3170" y="-1902"/>
+  </children>
+  <children xmi:id="_F9nYkCfbEeKZYLteadf7lA">
+    <children xmi:id="_F9n_oCfbEeKZYLteadf7lA" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_F9n_oSfbEeKZYLteadf7lA" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_F9omsCfbEeKZYLteadf7lA" type="Stereotype"/>
+    <children xmi:id="_F9omsSfbEeKZYLteadf7lA" type="Name"/>
+    <children xmi:id="_F9omsifbEeKZYLteadf7lA" type="Parent"/>
+    <children xmi:id="_F9omsyfbEeKZYLteadf7lA" visible="false" type="ANNOTATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_F9omtCfbEeKZYLteadf7lA"/>
+    </children>
+    <children xmi:id="_F9pNwCfbEeKZYLteadf7lA" type="ANNOTATED_ATTRIBUTE_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_F9pNwSfbEeKZYLteadf7lA"/>
+    </children>
+    <children xmi:id="_F9pNwifbEeKZYLteadf7lA" type="ANNOTATED_OPERATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_F9pNwyfbEeKZYLteadf7lA"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_F9nYkSfbEeKZYLteadf7lA" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=DisplayController%5Bjcu%5Ename=DisplayController.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEGame%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_F9nYkifbEeKZYLteadf7lA" x="10144" y="-3487"/>
+  </children>
+  <children xmi:id="_HyblICfbEeKZYLteadf7lA">
+    <children xmi:id="_HycMMCfbEeKZYLteadf7lA" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_HycMMSfbEeKZYLteadf7lA" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_HyczQCfbEeKZYLteadf7lA" type="Stereotype"/>
+    <children xmi:id="_HyczQSfbEeKZYLteadf7lA" type="Name"/>
+    <children xmi:id="_HyczQifbEeKZYLteadf7lA" type="Parent"/>
+    <children xmi:id="_HyczQyfbEeKZYLteadf7lA" visible="false" type="ANNOTATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_HyczRCfbEeKZYLteadf7lA"/>
+    </children>
+    <children xmi:id="_HyeocCfbEeKZYLteadf7lA" type="ANNOTATED_ATTRIBUTE_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_HyeocSfbEeKZYLteadf7lA"/>
+    </children>
+    <children xmi:id="_HyeocifbEeKZYLteadf7lA" type="ANNOTATED_OPERATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_HyeocyfbEeKZYLteadf7lA"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_HyblISfbEeKZYLteadf7lA" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=Weapons%5Bjcu%5Ename=Weapons.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEGame%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HyblIifbEeKZYLteadf7lA" x="15850" y="1585"/>
+  </children>
+  <children xmi:id="_AqYwgChAEeK8X_uCUdWkPw">
+    <children xmi:id="_AqbMwChAEeK8X_uCUdWkPw" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_AqbMwShAEeK8X_uCUdWkPw" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_AqbMwihAEeK8X_uCUdWkPw" type="Stereotype"/>
+    <children xmi:id="_Aqbz0ChAEeK8X_uCUdWkPw" type="Name"/>
+    <children xmi:id="_Aqca4ChAEeK8X_uCUdWkPw" type="Parent"/>
+    <children xmi:id="_Aqca4ShAEeK8X_uCUdWkPw" visible="false" type="ANNOTATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_Aqca4ihAEeK8X_uCUdWkPw"/>
+    </children>
+    <children xmi:id="_AqdB8ChAEeK8X_uCUdWkPw" type="ANNOTATED_ATTRIBUTE_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_AqdB8ShAEeK8X_uCUdWkPw"/>
+    </children>
+    <children xmi:id="_AqdpAChAEeK8X_uCUdWkPw" type="ANNOTATED_OPERATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_AqdpAShAEeK8X_uCUdWkPw"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_AqYwgShAEeK8X_uCUdWkPw" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=Level3Controller%5Bjcu%5Ename=Level3Controller.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEGame%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AqYwgihAEeK8X_uCUdWkPw" x="11412" y="22507"/>
+  </children>
+  <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_3CxJ4SfaEeKZYLteadf7lA"/>
+  <element xsi:nil="true"/>
+  <edges xmi:id="_5B_PoCfaEeKZYLteadf7lA" source="_49rXYCfaEeKZYLteadf7lA" target="_4DgOICfaEeKZYLteadf7lA">
+    <children xmi:id="_5CAdwCfaEeKZYLteadf7lA" type="KindLabel">
+      <children xmi:id="_5CBE0CfaEeKZYLteadf7lA" type="Stereotype"/>
+      <children xmi:id="_5CBE0ifaEeKZYLteadf7lA" type="Kind"/>
+      <children xmi:id="_5CBE0SfaEeKZYLteadf7lA" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5CAdwSfaEeKZYLteadf7lA" y="-186"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_5B_PoSfaEeKZYLteadf7lA" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=AnimalWeaponMapper%5Bjcu%5Ename=AnimalWeaponMapper.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEGame%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=Animals%5Bjcu%5Ename=Animals.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEGame%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_5B_PoifaEeKZYLteadf7lA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:id="_9c5UsCfaEeKZYLteadf7lA" source="_70ZF0CfaEeKZYLteadf7lA" target="_9ZjFwCfaEeKZYLteadf7lA">
+    <children xmi:id="_9c57wCfaEeKZYLteadf7lA" type="KindLabel">
+      <children xmi:id="_9c57wifaEeKZYLteadf7lA" type="Stereotype"/>
+      <children xmi:id="_9dLokCfaEeKZYLteadf7lA" type="Kind"/>
+      <children xmi:id="_9c57wyfaEeKZYLteadf7lA" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9c57wSfaEeKZYLteadf7lA" y="-186"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_9c5UsSfaEeKZYLteadf7lA" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=Level1Controller%5Bjcu%5Ename=Level1Controller.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEGame%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=LevelController%5Bjcu%5Ename=LevelController.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEGame%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_9c5UsifaEeKZYLteadf7lA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:id="_9dMPoCfaEeKZYLteadf7lA" source="_70ZF0CfaEeKZYLteadf7lA" target="_9ZjFwCfaEeKZYLteadf7lA">
+    <children xmi:id="_9dM2sCfaEeKZYLteadf7lA" type="NameLabel">
+      <children xmi:id="_9dM2sifaEeKZYLteadf7lA" type="Stereotype"/>
+      <children xmi:id="_9dM2syfaEeKZYLteadf7lA" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9dM2sSfaEeKZYLteadf7lA" y="-186"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_9dMPoSfaEeKZYLteadf7lA" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Generalization" href="mmi:///#jgen%5Bjsrctype%5Ename=Level1Controller%5Bjcu%5Ename=Level1Controller.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEGame%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=LevelController%5Bjcu%5Ename=LevelController.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEGame%5D%5D%5D%5D%5D$uml.Generalization"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_9dMPoifaEeKZYLteadf7lA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:id="_9dNdwCfaEeKZYLteadf7lA" source="_8X73wCfaEeKZYLteadf7lA" target="_9ZjFwCfaEeKZYLteadf7lA">
+    <children xmi:id="_9dOE0CfaEeKZYLteadf7lA" type="KindLabel">
+      <children xmi:id="_9dOr4CfaEeKZYLteadf7lA" type="Stereotype"/>
+      <children xmi:id="_9dOr4ifaEeKZYLteadf7lA" type="Kind"/>
+      <children xmi:id="_9dOr4SfaEeKZYLteadf7lA" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9dOE0SfaEeKZYLteadf7lA" y="-186"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_9dNdwSfaEeKZYLteadf7lA" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=Level2Controller%5Bjcu%5Ename=Level2Controller.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEGame%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=LevelController%5Bjcu%5Ename=LevelController.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEGame%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_9dNdwifaEeKZYLteadf7lA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:id="_9dPS8CfaEeKZYLteadf7lA" source="_8X73wCfaEeKZYLteadf7lA" target="_9ZjFwCfaEeKZYLteadf7lA">
+    <children xmi:id="_9dPS8yfaEeKZYLteadf7lA" type="NameLabel">
+      <children xmi:id="_9dPS9SfaEeKZYLteadf7lA" type="Stereotype"/>
+      <children xmi:id="_9dP6ACfaEeKZYLteadf7lA" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9dPS9CfaEeKZYLteadf7lA" y="-186"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_9dPS8SfaEeKZYLteadf7lA" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Generalization" href="mmi:///#jgen%5Bjsrctype%5Ename=Level2Controller%5Bjcu%5Ename=Level2Controller.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEGame%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=LevelController%5Bjcu%5Ename=LevelController.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEGame%5D%5D%5D%5D%5D$uml.Generalization"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_9dPS8ifaEeKZYLteadf7lA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:id="_9dRvMCfaEeKZYLteadf7lA" source="_9ZjFwCfaEeKZYLteadf7lA" target="_4DgOICfaEeKZYLteadf7lA">
+    <children xmi:id="_9dRvMyfaEeKZYLteadf7lA" type="KindLabel">
+      <children xmi:id="_9dRvNSfaEeKZYLteadf7lA" type="Stereotype"/>
+      <children xmi:id="_9dSWQCfaEeKZYLteadf7lA" type="Kind"/>
+      <children xmi:id="_9dRvNifaEeKZYLteadf7lA" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9dRvNCfaEeKZYLteadf7lA" y="-186"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_9dRvMSfaEeKZYLteadf7lA" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=LevelController%5Bjcu%5Ename=LevelController.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEGame%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=Animals%5Bjcu%5Ename=Animals.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEGame%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_9dRvMifaEeKZYLteadf7lA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:id="_9dSWQSfaEeKZYLteadf7lA" source="_9ZjFwCfaEeKZYLteadf7lA" target="_49rXYCfaEeKZYLteadf7lA">
+    <children xmi:id="_9dSWRCfaEeKZYLteadf7lA" type="KindLabel">
+      <children xmi:id="_9dS9UCfaEeKZYLteadf7lA" type="Stereotype"/>
+      <children xmi:id="_9dS9UifaEeKZYLteadf7lA" type="Kind"/>
+      <children xmi:id="_9dS9USfaEeKZYLteadf7lA" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9dSWRSfaEeKZYLteadf7lA" y="-186"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_9dSWQifaEeKZYLteadf7lA" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=LevelController%5Bjcu%5Ename=LevelController.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEGame%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=AnimalWeaponMapper%5Bjcu%5Ename=AnimalWeaponMapper.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEGame%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_9dSWQyfaEeKZYLteadf7lA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:id="_FCJ14CfbEeKZYLteadf7lA" source="_E_Zc0CfbEeKZYLteadf7lA" target="_9ZjFwCfaEeKZYLteadf7lA">
+    <children xmi:id="_FCKc8CfbEeKZYLteadf7lA" type="KindLabel">
+      <children xmi:id="_FCLEACfbEeKZYLteadf7lA" type="Stereotype"/>
+      <children xmi:id="_FCLEAifbEeKZYLteadf7lA" type="Kind"/>
+      <children xmi:id="_FCLEASfbEeKZYLteadf7lA" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FCKc8SfbEeKZYLteadf7lA" y="-186"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_FCJ14SfbEeKZYLteadf7lA" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=LevelFactory%5Bjcu%5Ename=LevelFactory.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEGame%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=LevelController%5Bjcu%5Ename=LevelController.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEGame%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_FCJ14ifbEeKZYLteadf7lA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:id="_GAUHQCfbEeKZYLteadf7lA" source="_F9nYkCfbEeKZYLteadf7lA" target="_7NF1QCfaEeKZYLteadf7lA">
+    <children xmi:id="_GAXKkCfbEeKZYLteadf7lA" type="KindLabel">
+      <children xmi:id="_GAXxoSfbEeKZYLteadf7lA" type="Stereotype"/>
+      <children xmi:id="_GAXxoyfbEeKZYLteadf7lA" type="Kind"/>
+      <children xmi:id="_GAXxoifbEeKZYLteadf7lA" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GAXxoCfbEeKZYLteadf7lA" y="-186"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_GAUHQSfbEeKZYLteadf7lA" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=DisplayController%5Bjcu%5Ename=DisplayController.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEGame%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=GameTimer%5Bjcu%5Ename=GameTimer.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEGame%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_GAUHQifbEeKZYLteadf7lA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:id="_GAYYsCfbEeKZYLteadf7lA" source="_F9nYkCfbEeKZYLteadf7lA" target="_E_Zc0CfbEeKZYLteadf7lA">
+    <children xmi:id="_GAYYsyfbEeKZYLteadf7lA" type="KindLabel">
+      <children xmi:id="_GAYYtSfbEeKZYLteadf7lA" type="Stereotype"/>
+      <children xmi:id="_GAY_wSfbEeKZYLteadf7lA" type="Kind"/>
+      <children xmi:id="_GAY_wCfbEeKZYLteadf7lA" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GAYYtCfbEeKZYLteadf7lA" y="-186"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_GAYYsSfbEeKZYLteadf7lA" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=DisplayController%5Bjcu%5Ename=DisplayController.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEGame%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=LevelFactory%5Bjcu%5Ename=LevelFactory.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEGame%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_GAYYsifbEeKZYLteadf7lA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:id="_H1PBgCfbEeKZYLteadf7lA" source="_49rXYCfaEeKZYLteadf7lA" target="_HyblICfbEeKZYLteadf7lA">
+    <children xmi:id="_H1PokSfbEeKZYLteadf7lA" type="KindLabel">
+      <children xmi:id="_H1PokyfbEeKZYLteadf7lA" type="Stereotype"/>
+      <children xmi:id="_H1QPoSfbEeKZYLteadf7lA" type="Kind"/>
+      <children xmi:id="_H1QPoCfbEeKZYLteadf7lA" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_H1PokifbEeKZYLteadf7lA" y="-186"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_H1PBgSfbEeKZYLteadf7lA" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=AnimalWeaponMapper%5Bjcu%5Ename=AnimalWeaponMapper.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEGame%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=Weapons%5Bjcu%5Ename=Weapons.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEGame%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_H1PokCfbEeKZYLteadf7lA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:id="_H1QPoifbEeKZYLteadf7lA" source="_9ZjFwCfaEeKZYLteadf7lA" target="_HyblICfbEeKZYLteadf7lA">
+    <children xmi:id="_H1Q2sCfbEeKZYLteadf7lA" type="KindLabel">
+      <children xmi:id="_H1Q2sifbEeKZYLteadf7lA" type="Stereotype"/>
+      <children xmi:id="_H1Q2tCfbEeKZYLteadf7lA" type="Kind"/>
+      <children xmi:id="_H1Q2syfbEeKZYLteadf7lA" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_H1Q2sSfbEeKZYLteadf7lA" y="-186"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_H1QPoyfbEeKZYLteadf7lA" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=LevelController%5Bjcu%5Ename=LevelController.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEGame%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=Weapons%5Bjcu%5Ename=Weapons.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEGame%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_H1QPpCfbEeKZYLteadf7lA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:id="_AtkAUChAEeK8X_uCUdWkPw" source="_AqYwgChAEeK8X_uCUdWkPw" target="_9ZjFwCfaEeKZYLteadf7lA">
+    <children xmi:id="_AtkAUyhAEeK8X_uCUdWkPw" type="KindLabel">
+      <children xmi:id="_AtknYChAEeK8X_uCUdWkPw" type="Stereotype"/>
+      <children xmi:id="_AtknYihAEeK8X_uCUdWkPw" type="Kind"/>
+      <children xmi:id="_AtknYShAEeK8X_uCUdWkPw" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AtkAVChAEeK8X_uCUdWkPw" y="-186"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_AtkAUShAEeK8X_uCUdWkPw" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=Level3Controller%5Bjcu%5Ename=Level3Controller.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEGame%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=LevelController%5Bjcu%5Ename=LevelController.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEGame%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_AtkAUihAEeK8X_uCUdWkPw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:id="_Atl1gChAEeK8X_uCUdWkPw" source="_AqYwgChAEeK8X_uCUdWkPw" target="_9ZjFwCfaEeKZYLteadf7lA">
+    <children xmi:id="_AtmckChAEeK8X_uCUdWkPw" type="NameLabel">
+      <children xmi:id="_AtmckihAEeK8X_uCUdWkPw" type="Stereotype"/>
+      <children xmi:id="_AtnDoChAEeK8X_uCUdWkPw" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AtmckShAEeK8X_uCUdWkPw" y="-186"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_Atl1gShAEeK8X_uCUdWkPw" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Generalization" href="mmi:///#jgen%5Bjsrctype%5Ename=Level3Controller%5Bjcu%5Ename=Level3Controller.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEGame%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=LevelController%5Bjcu%5Ename=LevelController.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEGame%5D%5D%5D%5D%5D$uml.Generalization"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Atl1gihAEeK8X_uCUdWkPw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+</notation:Diagram>
