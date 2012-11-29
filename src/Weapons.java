@@ -35,4 +35,7 @@ public class Weapons {
     public HashMap<String,Integer> getNameToIndexList(){
         return nameToIndexList;
     }
+    public int getWeaponCount(){
+    	return weaponList.size();
+    }
 }

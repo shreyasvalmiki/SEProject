@@ -19,10 +19,10 @@ public class LevelController {
     protected HashMap<String,Integer> weaponNameList = new HashMap<String, Integer>();
     protected HashMap<Integer,String> weaponIndexList = new HashMap<Integer, String>();
     
-    protected HashMap<Integer,ArrayList<Integer>> animalWeaponMap = new HashMap<Integer, ArrayList<Integer>>();
-    protected HashMap<String,ArrayList<String>> huntMap = new HashMap<String, ArrayList<String>>();
+    public HashMap<Integer,ArrayList<Integer>> animalWeaponMap = new HashMap<Integer, ArrayList<Integer>>();
+    public HashMap<String,ArrayList<String>> huntMap = new HashMap<String, ArrayList<String>>();
     public LevelController(){   
-        
+        mapper = new AnimalWeaponMapper();
     }
     protected void initLists(){
         animalWeaponMap = mapper.getAnimalWeaponMap();

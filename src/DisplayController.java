@@ -4,18 +4,21 @@ public class DisplayController {
 	/**
 	 * @param args
 	 */
+	
+	private static boolean isExitGame = false;
+	private static String command = new String();
+	private static Scanner input = new Scanner(System.in);
+	private static boolean hasWon = false;
+	private static boolean hasLost = false;
+	private static LevelController level = new LevelController();
+	private static int levelNo = 1;
+	private static Animals animals = new Animals();
+	private static Weapons weapons = new Weapons();
+	
 	public static void main(String[] args) {
         // TODO code application logic here
-        DisplayController proj = new DisplayController();
-        boolean isExitGame = false;
-        String command = new String();
-        Scanner input = new Scanner(System.in);
-        boolean hasWon = false;
-        boolean hasLost = false;
-        LevelController level = new LevelController();
-        int levelNo = 1;
-        Animals animals = new Animals();
-        Weapons weapons = new Weapons();
+        DisplayController disp = new DisplayController();
+        
         while(!isExitGame)
         {
             do
@@ -40,16 +43,21 @@ public class DisplayController {
             
             level = LevelFactory.getController(levelNo);
             
+            //testing
+            disp.displayList(animals.getNameToIndexList());
+            disp.displayList(weapons.getNameToIndexList());
+            
+            command = input.next();
             boolean startedHunting = false;
             GameTimer timer = new GameTimer();
             while(!hasLost && !hasWon){
                 if(command.equalsIgnoreCase("list animals"))
                 {
-                    proj.displayList(animals.getNameToIndexList());
+                    disp.displayList(animals.getNameToIndexList());
                 }
                 else if(command.equalsIgnoreCase("list weapons"))
                 {
-                    proj.displayList(weapons.getNameToIndexList());
+                    disp.displayList(weapons.getNameToIndexList());
                 }
                 else if(command.equalsIgnoreCase("hunt"))
                 {
@@ -58,6 +66,11 @@ public class DisplayController {
                         startedHunting = true;
                         timer.start();
                     }
+                    disp.hunt();
+                }
+                else
+                {
+                	System.out.println("I did not understand");
                 }
             }    
         }
@@ -73,11 +86,35 @@ public class DisplayController {
     }
     
     public void hunt(){
-        
+        displayHuntGrid();
+        //test
+        hasLost=true;
     }
     
     public void displayHuntGrid(){
+    	HashMap<String,Integer> animalToIndex = new HashMap<String, Integer>();
+    	animalToIndex = animals.getNameToIndexList();
+        for(String s: level.huntMap.keySet()){
+        	if(level.animalWeaponMap.keySet().contains(animalToIndex.get(s))){
+        		System.out.print("\t"+s);
+        	}
+        	else
+        	{
+        		System.out.print("\t");
+        	}
+        }
         
+        for(int i = 0; i<weapons.getWeaponCount();++i){
+        	for(String s: level.huntMap.keySet()){
+            	if(level.animalWeaponMap.keySet().contains(animalToIndex.get(s))){
+            		System.out.print("\t"+level.huntMap.get(s).get(i));
+            	}
+            	else
+            	{
+            		System.out.print("\t");
+            	}
+            }
+        }
     }
 
 }
