@@ -64,14 +64,14 @@ public final class AnimalWeaponMapper {
         
         //test
     	//System.out.println("in setAnimalToWeaponRatio");
-        fillRatioList(huntedWith2);
-        fillRatioList(huntedWith3);
-        fillRatioList(huntedWith4);
+        fillRatioList(2,huntedWith2);
+        fillRatioList(3,huntedWith3);
+        fillRatioList(4,huntedWith4);
       //test
     	System.out.println("out setAnimalToWeaponRatio");
     }
     
-    private void fillRatioList(int huntTimes){
+    private void fillRatioList(int weaponToAnimalNo,int huntTimes){
     	 //test
     	//System.out.println("in fillRatioList");
         Random rand = new Random();
@@ -82,7 +82,7 @@ public final class AnimalWeaponMapper {
             	int key = rand.nextInt(animalListSize)+1;
                 if(!indexInsertedList.contains(key)){
                     indexInsertedList.add(key);
-                    animalToWeaponNo.put(key, huntTimes);
+                    animalToWeaponNo.put(key, weaponToAnimalNo);
                     hasInserted = true;
                 }
             }
@@ -121,11 +121,11 @@ public final class AnimalWeaponMapper {
             while(!isRowDone){
                randIndex = rand.nextInt(weaponListSize) + 1; 
                //if(!randList.contains(randIndex) && (weaponListSize-randList.size()) < ratio && mandatoryList.get(i) != randIndex){
-               if(!randList.contains(randIndex) && randList.size() < ratio && mandatoryList.get(i) != randIndex){
+               if(!randList.contains(randIndex) && (weaponListSize-randList.size()) > ratio && mandatoryList.get(i) != randIndex){
                    randList.add(randIndex);
                    wList.set(wList.indexOf(randIndex), -1);
                }
-               if(randList.size() == ratio){
+               if((weaponListSize-randList.size()) == ratio){
             	   isRowDone = true;
                }
             }
