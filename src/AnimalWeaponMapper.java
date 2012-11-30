@@ -52,7 +52,8 @@ public final class AnimalWeaponMapper {
     }
     
     private void setAnimalToWeaponRatio(int huntedWith2,int huntedWith3,int huntedWith4){
-        
+    	//test
+    	//System.out.println("in setAnimalToWeaponRatio");
         int total = huntedWith2 + huntedWith3 + huntedWith4;
         
         
@@ -61,17 +62,24 @@ public final class AnimalWeaponMapper {
             huntedWith3 += animalList.size() - total;
         }
         
+        //test
+    	//System.out.println("in setAnimalToWeaponRatio");
         fillRatioList(huntedWith2);
         fillRatioList(huntedWith3);
         fillRatioList(huntedWith4);
+      //test
+    	System.out.println("out setAnimalToWeaponRatio");
     }
     
     private void fillRatioList(int huntTimes){
+    	 //test
+    	//System.out.println("in fillRatioList");
         Random rand = new Random();
         for(int i = 0; i<huntTimes;i++){
-            int key = rand.nextInt(animalListSize)+1;
+            //int key = rand.nextInt(animalListSize)+1;
             boolean hasInserted = false;
             while(!hasInserted){
+            	int key = rand.nextInt(animalListSize)+1;
                 if(!indexInsertedList.contains(key)){
                     indexInsertedList.add(key);
                     animalToWeaponNo.put(key, huntTimes);
@@ -79,9 +87,14 @@ public final class AnimalWeaponMapper {
                 }
             }
         }
+        //test
+    	//System.out.println("out fillRatioList");
     }
     
     private void computeAndSetHuntMap(){
+    	//test
+    	//System.out.println("in computeAndSetHuntMap");
+    	
         ArrayList<Integer> rowSumList = new ArrayList<Integer>();
         HashMap<Integer,Integer> mandatoryList = new HashMap<Integer, Integer>();
         int rowSum;
@@ -107,18 +120,24 @@ public final class AnimalWeaponMapper {
             rowSum = 0;
             while(!isRowDone){
                randIndex = rand.nextInt(weaponListSize) + 1; 
-               if(!randList.contains(randIndex) && (weaponListSize-randList.size()) <= ratio && mandatoryList.get(i) != randIndex){
+               //if(!randList.contains(randIndex) && (weaponListSize-randList.size()) < ratio && mandatoryList.get(i) != randIndex){
+               if(!randList.contains(randIndex) && randList.size() < ratio && mandatoryList.get(i) != randIndex){
                    randList.add(randIndex);
                    wList.set(wList.indexOf(randIndex), -1);
                }
-            } 
-            
+               if(randList.size() == ratio){
+            	   isRowDone = true;
+               }
+            }
         }
         setHuntMap();
+        //test
+        //System.out.println("in computeAndSetHuntMap");
     }
     
     private void setHuntMap(){
-        
+    	//test
+    	//System.out.println("in setHuntMap");
         for(int key: animalWeaponMap.keySet()){
             ArrayList<String> huntWeaponNames = new ArrayList<String>();
             ArrayList<Integer> huntWeaponIndexes = new ArrayList<Integer>();
@@ -135,6 +154,8 @@ public final class AnimalWeaponMapper {
             }
             huntMap.put(animalList.get(key), huntWeaponNames);
         }
+        //test
+        //System.out.println("in setHuntMap");
     }
     
     public HashMap<Integer,ArrayList<Integer>> getAnimalWeaponMap(){
