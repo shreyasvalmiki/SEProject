@@ -18,30 +18,94 @@ public class LevelController {
     protected HashMap<Integer,String> animalIndexList = new HashMap<Integer, String>();
     protected HashMap<String,Integer> weaponNameList = new HashMap<String, Integer>();
     protected HashMap<Integer,String> weaponIndexList = new HashMap<Integer, String>();
+    protected boolean isLoser = false;
+    protected boolean isWinner = false;
     
     public HashMap<Integer,ArrayList<Integer>> animalWeaponMap = new HashMap<Integer, ArrayList<Integer>>();
     public HashMap<String,ArrayList<String>> huntMap = new HashMap<String, ArrayList<String>>();
+    
+    public HashMap<Integer,ArrayList<Integer>> initMap = new HashMap<Integer, ArrayList<Integer>>();
+    protected int animalsLeft;
+    protected boolean isTimeNeeded;
+    
     public LevelController(){   
         mapper = new AnimalWeaponMapper();
     }
-    protected void initLists(){
+    @SuppressWarnings("unchecked")
+	protected void initLists(){
+    	isLoser = false;
+    	isWinner = false;
+    	animalsLeft = 5;
         animalWeaponMap = mapper.getAnimalWeaponMap();
         huntMap = mapper.getHuntMap();
+        initMap = (HashMap<Integer, ArrayList<Integer>>) animalWeaponMap.clone();
         animalNameList = animals.getNameToIndexList();
         animalIndexList = animals.getAnimalList();
         weaponNameList = weapons.getNameToIndexList();
         weaponIndexList = weapons.getWeaponList();
         
     }
-    public boolean isWinner(){
-        return true;
+    public boolean hasWon(){
+    	if(animalWeaponMap.size() == 0){
+    		return true;
+    	}
+    	else
+    	{
+    		return false;
+    	}
+    }
+    public boolean hasLost(){
+    	for(ArrayList<Integer> i:animalWeaponMap.values()){
+    		if(i.size() == 0){
+    			return true;
+    		}
+    	}
+    	return isLoser;
     }
     
-    
-    public boolean hunt(){
-        
-       
-       return false;
+    public int hunt(String animal,String weapon, long time, int turnCount){
+    	ArrayList<Integer> currChecklist = new ArrayList<Integer>();
+    	ArrayList<String> strChecklist = new ArrayList<String>();
+    	currChecklist = animalWeaponMap.get(animals.getNameToIndexList().get(animal));
+    	strChecklist = huntMap.get(animal);
+    	if(!strChecklist.contains(weapon)){
+    		return 4;
+    	}
+    	else if(!currChecklist.contains(weapons.getNameToIndexList().get(weapon)))
+    	{
+    		return 5;
+    	}
+    	else
+    	{
+    		--animalsLeft;
+    		return 0;
+    	}
     }
     
+    protected void updateAnimalWeaponMap(Integer animal,Integer weapon){
+    	animalWeaponMap.remove(animal);
+    	ArrayList<Integer> weaponCheck = new ArrayList<Integer>();
+    	for(Integer i:animalWeaponMap.keySet()){
+    		weaponCheck = animalWeaponMap.get(i);
+    		if(weaponCheck.contains(weapon)){
+    			weaponCheck.remove(weapon);
+    			animalWeaponMap.put(i, weaponCheck);
+    		}
+    	}
+    }
+    
+    protected void updateHuntMap(String animal, String weapon){
+    	huntMap.remove(animal);
+    	ArrayList<String> weaponCheck = new ArrayList<String>();
+    	for(String s: huntMap.keySet()){
+    		weaponCheck = huntMap.get(s);
+    		if(weaponCheck.contains(weapon)){
+    			weaponCheck.set(weaponCheck.indexOf(weapon), "");
+    			huntMap.put(s, weaponCheck);
+    		}
+    	}
+    }
+    public boolean isTimeNeeded(){
+    	return isTimeNeeded;
+    }
 }

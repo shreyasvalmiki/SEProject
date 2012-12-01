@@ -154,10 +154,22 @@ public final class AnimalWeaponMapper {
             }
             huntMap.put(animalList.get(key), huntWeaponNames);
         }
+        cleanAnimalWeaponMap();
         //test
         //System.out.println("in setHuntMap");
+        
     }
-    
+    private void cleanAnimalWeaponMap(){
+    	ArrayList<Integer> tempArray = new ArrayList<Integer>();
+    	for(Integer i:animalWeaponMap.keySet()){
+    		tempArray = animalWeaponMap.get(i);
+    		do
+    		{
+    			tempArray.remove(tempArray.indexOf(-1));
+    		}while(tempArray.contains(-1));
+ 
+    	}
+    }
     public HashMap<Integer,ArrayList<Integer>> getAnimalWeaponMap(){
         return animalWeaponMap;
     }

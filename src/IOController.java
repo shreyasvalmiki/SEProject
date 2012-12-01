@@ -1,5 +1,5 @@
 import java.util.*;
-public class DisplayController {
+public class IOController {
 
 	/**
 	 * @param args
@@ -15,13 +15,28 @@ public class DisplayController {
 	private static int levelNo = 1;
 	private static Animals animals = new Animals();
 	private static Weapons weapons = new Weapons();
+	private static GameTimer timer = new GameTimer();
+	public static HashMap<Integer,String> resultMap = new HashMap<Integer,String>();
 	
+	public IOController(){
+		resultMap.put(Constants.CONTINUE, "Continue");
+		resultMap.put(Constants.WON, "You Win!");
+		resultMap.put(Constants.LOST, "You Lose!");
+		resultMap.put(Constants.WON_WITH_TIME, "You have won a medal, you are the ‘King of the Jungle’");
+		resultMap.put(Constants.WEAPON_NOT_FOUND, "The weapon you selected cannot be used to kill this animal! Select another weapon:");
+		resultMap.put(Constants.WEAPON_USED, "The weapon has been used! Choose another weapon.");
+		resultMap.put(Constants.ANIMAL_KILLED, "The animal has been killed!");
+	}
+	
+	@SuppressWarnings("unchecked")
 	public static void main(String[] args) {
         // TODO code application logic here
-        DisplayController disp = new DisplayController();
+        IOController disp = new IOController();
         
         while(!isExitGame)
         {
+        	hasWon = false;
+        	hasLost = false;
             do
             {
             	levelNo = 1;
@@ -50,7 +65,7 @@ public class DisplayController {
             //disp.displayList(animals.getNameToIndexList());
             //disp.displayList(weapons.getNameToIndexList());
             boolean startedHunting = false;
-            GameTimer timer = new GameTimer();
+            
             command = input.nextLine();
             hasLost = false;
             hasWon = false;
@@ -94,7 +109,12 @@ public class DisplayController {
                 {
                 	System.out.println("I did not understand");
                 }
-            }    
+            } 
+            System.out.println("Replay the game?[Y/N]");
+            if(disp.inputString().equalsIgnoreCase("n")){
+            	isExitGame = true;
+            	System.out.println("The hunter left the forest!");
+            }
         }
     }
     
@@ -113,55 +133,72 @@ public class DisplayController {
     	String animal = new String();
     	String weapon = new String();
     	boolean isDone = false;
-    	int tryCount = 0;
+    	int turnCount = 0;
+    	int resultKey;
     	boolean isAnimalSelected = false;
+    	long timeInSecs = 0;
     	while(true){
     		displayHuntGrid();
             //test
     		System.out.print("Please select an animal:");
-			try{
-				animal = input.next();
-				animal = animal.toLowerCase();
-			}
-			catch(Exception e){
-				animal = "x";
-			}
+			animal = inputString();
     		do{
     			if(!level.huntMap.keySet().contains(animal)){
     				if (animals.getAnimalList().containsValue(animal)){
-        				System.out.print("The animal has been killed!");
+        				System.out.print("The animal has been killed! Select another animal: ");
         			}
     				else if (!animals.getAnimalList().containsValue(animal)){
-    					System.out.print("This animal is not part of the list.");
+    					System.out.print("This animal is not in the forest. Select another animal: ");
     				}
-    				try{
-    					animal = input.next();
-    					animal = animal.toLowerCase();
-    				}
-    				catch(Exception e){
-    					animal = "x";
-    				}
+    				animal = inputString();
     			}
     			else
     			{
     				isAnimalSelected = true;
-    				System.out.println("Weapon checklist for "+animal);
+    				System.out.println("Weapon checklist for "+animal+":");
     				displayList(level.huntMap.get(animal));
     			}
     		}while(!isAnimalSelected); 
-    		
+    		turnCount = 0;
     		System.out.print("Please select a weapon:");
-			try{
-				animal = input.next();
-				animal = animal.toLowerCase();
-			}
-			catch(Exception e){
-				animal = "x";
-			}
-    		
+			weapon = inputString();
     		do{
-    			
+    			timeInSecs = timer.getElapsedTimeSecs();
+    			++turnCount;
+    			resultKey = level.hunt(animal, weapon, timeInSecs, turnCount);
+    			if(resultKey == Constants.WEAPON_NOT_FOUND || resultKey == Constants.WEAPON_USED){
+    				isDone = false;
+    				System.out.println(resultMap.get(resultKey));
+    				weapon = inputString();
+    			}
+    			else{
+    				isDone = true;
+    			}
     		}while(!isDone);
+    		
+    		if(resultKey == Constants.CONTINUE){
+    			System.out.println("Number of animals left: " + level.animalsLeft);
+    			//displayList(level.huntMap.get(animal));
+    		}
+    		else
+    		{
+    			if(resultKey == Constants.LOST){
+    				hasLost = true;
+    				System.out.println(resultMap.get(Constants.LOST));
+    			}
+    			else if (resultKey == Constants.WON || resultKey == Constants.WON_WITH_TIME){
+    				hasWon = true;
+    				timer.stop();
+    				if(level.isTimeNeeded){
+    					System.out.println("Time taken to complete(in seconds): " + timeInSecs);
+    				}
+    				System.out.println(resultMap.get(Constants.WON));
+    				if (resultKey == Constants.WON_WITH_TIME){
+    					System.out.println(resultMap.get(Constants.WON_WITH_TIME));
+    				}
+    			}
+    			return;
+    		}
     	}
     }
     
@@ -204,5 +241,14 @@ public class DisplayController {
             } 
         	System.out.println("\n\n");
         }
+    }
+    
+    private String inputString(){
+    	try{
+    		return input.next().toLowerCase();
+    	}
+    	catch(Exception e){
+    		return "x";
+    	}
     }
 }
