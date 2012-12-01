@@ -16,17 +16,17 @@ public class Animals {
     private HashMap<String,Integer> nameToIndexList = new HashMap<String, Integer>();
     
     public Animals(){
-        animalList.put(1,"Bear");
-        animalList.put(2,"Deer");
-        animalList.put(3,"Hare");
-        animalList.put(4,"Rabbit");
-        animalList.put(5,"Boar");
+        animalList.put(1,"bear");
+        animalList.put(2,"deer");
+        animalList.put(3,"hare");
+        animalList.put(4,"rabbit");
+        animalList.put(5,"boar");
         
-        nameToIndexList.put("Bear",1);
-        nameToIndexList.put("Deer",2);
-        nameToIndexList.put("Hare",3);
-        nameToIndexList.put("Rabbit",4);
-        nameToIndexList.put("Boar",5);
+        nameToIndexList.put("bear",1);
+        nameToIndexList.put("deer",2);
+        nameToIndexList.put("hare",3);
+        nameToIndexList.put("rabbit",4);
+        nameToIndexList.put("boar",5);
     }
     public HashMap<Integer,String> getAnimalList(){
         return animalList;

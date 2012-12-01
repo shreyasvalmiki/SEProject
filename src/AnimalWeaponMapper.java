@@ -68,7 +68,7 @@ public final class AnimalWeaponMapper {
         fillRatioList(3,huntedWith3);
         fillRatioList(4,huntedWith4);
       //test
-    	System.out.println("out setAnimalToWeaponRatio");
+    	//System.out.println("out setAnimalToWeaponRatio");
     }
     
     private void fillRatioList(int weaponToAnimalNo,int huntTimes){

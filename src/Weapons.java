@@ -14,18 +14,18 @@ public class Weapons {
     private HashMap<Integer,String> weaponList = new HashMap<Integer, String>();
     private HashMap<String,Integer> nameToIndexList = new HashMap<String, Integer>();
     public Weapons(){
-        weaponList.put(1,"Pistol");
-        weaponList.put(2,"Sling Shot");
-        weaponList.put(3,"Rifle");
-        weaponList.put(4,"Shot Gun");
-        weaponList.put(5,"Bazooka");
+        weaponList.put(1,"pistol");
+        weaponList.put(2,"slingshot");
+        weaponList.put(3,"rifle");
+        weaponList.put(4,"shotgun");
+        weaponList.put(5,"bazooka");
         
         
-        nameToIndexList.put("Pistol",1);
-        nameToIndexList.put("Sling Shot",2);
-        nameToIndexList.put("Rifle",3);
-        nameToIndexList.put("Shot Gun",4);
-        nameToIndexList.put("Bazooka",5);
+        nameToIndexList.put("pistol",1);
+        nameToIndexList.put("slingshot",2);
+        nameToIndexList.put("rifle",3);
+        nameToIndexList.put("shotgun",4);
+        nameToIndexList.put("bazooka",5);
     }
     
     public HashMap<Integer,String> getWeaponList(){
