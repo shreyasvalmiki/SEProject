@@ -76,19 +76,19 @@ public class IOController {
 //            	System.out.println("Enter 4 to exit");
             	//command = input.nextInt();
             	
-            	System.out.println("\nCommands:");
+            	System.out.print("\nEnter Command:");
             	System.out.println("\t");
             	command = input.nextLine();
             	
                 if(command.equalsIgnoreCase("list animals"))
             	//if(command == 1)
                 {
-                    disp.displayList((ArrayList<String>) animals.getNameToIndexList().keySet());
+                    disp.displayList(new ArrayList<String> (animals.getNameToIndexList().keySet()));
                 }
                 else if(command.equalsIgnoreCase("list weapons"))
             	//else if(command == 2)
                 {
-                    disp.displayList((ArrayList<String>) weapons.getNameToIndexList().keySet());
+                    disp.displayList(new ArrayList<String>( weapons.getNameToIndexList().keySet()));
                 }
                 else if(command.equalsIgnoreCase("hunt"))
             	//else if(command == 3)
