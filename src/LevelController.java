@@ -69,16 +69,16 @@ public class LevelController {
     	currChecklist = animalWeaponMap.get(animals.getNameToIndexList().get(animal));
     	strChecklist = huntMap.get(animal);
     	if(!strChecklist.contains(weapon)){
-    		return 4;
+    		return Constants.WEAPON_NOT_FOUND;
     	}
     	else if(!currChecklist.contains(weapons.getNameToIndexList().get(weapon)))
     	{
-    		return 5;
+    		return Constants.WEAPON_USED;
     	}
     	else
     	{
     		--animalsLeft;
-    		return 0;
+    		return Constants.CONTINUE;
     	}
     }
     

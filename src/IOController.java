@@ -16,7 +16,10 @@ public class IOController {
 	private static Animals animals = new Animals();
 	private static Weapons weapons = new Weapons();
 	private static GameTimer timer = new GameTimer();
+	private static ArrayList<String> animalsKilled = new ArrayList<String>();
+	private static ArrayList<String> weaponsUsed = new ArrayList<String>();
 	public static HashMap<Integer,String> resultMap = new HashMap<Integer,String>();
+	
 	
 	public IOController(){
 		resultMap.put(Constants.CONTINUE, "Continue");
@@ -177,6 +180,10 @@ public class IOController {
     		}while(!isDone);
     		
     		if(resultKey == Constants.CONTINUE){
+    			animalsKilled.add(animal);
+    			weaponsUsed.add(weapon);
+    			System.out.println("Animal killed: "+animal);
+    			System.out.println("Weapon used: "+ weapon);
     			System.out.println("Number of animals left: " + level.animalsLeft);
     			//displayList(level.huntMap.get(animal));
     		}

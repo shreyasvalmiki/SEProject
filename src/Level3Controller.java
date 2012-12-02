@@ -18,23 +18,23 @@ public class Level3Controller extends LevelController {
     }
     public int hunt(String animal,String weapon, long time, int turnCount){
     	int result = super.hunt(animal, weapon, time, turnCount);
-    	if(result == 5 && turnCount == 2){
+    	if(result == Constants.WEAPON_USED && turnCount == 2){
     		isLoser = true;
-    		result = 2;
+    		result = Constants.LOST;
     	}
-    	if(result == 0)
+    	if(result == Constants.CONTINUE)
     	{
     		updateAnimalWeaponMap(animals.getNameToIndexList().get(animal), weapons.getNameToIndexList().get(weapon));
     		updateHuntMap(animal,weapon);
     		if(hasWon()&& time > 60){
-    			result = 1;
+    			result = Constants.WON;
     		}
-    		else if(hasWon() && time <= 60)
+    		else if(hasWon() && time <= Constants.ONE_MINUTE)
     		{
-    			result = 3;
+    			result = Constants.WON_WITH_TIME;
     		}
     		else if(hasLost()){
-    			result = 2;
+    			result = Constants.LOST;
     		}
     	}
     	return result;
