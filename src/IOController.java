@@ -31,13 +31,15 @@ public class IOController {
 		resultMap.put(Constants.ANIMAL_KILLED, "The animal has been killed!");
 	}
 	
-	@SuppressWarnings("unchecked")
 	public static void main(String[] args) {
         // TODO code application logic here
         IOController disp = new IOController();
         
         while(!isExitGame)
         {
+        	boolean isNotReentry = true;
+        	animalsKilled.clear();
+        	weaponsUsed.clear();
         	hasWon = false;
         	hasLost = false;
             do
@@ -81,17 +83,21 @@ public class IOController {
             	
             	System.out.print("\nEnter Command:");
             	System.out.println("\t");
+            	//Hack to make the phrases work
+            	if(!isNotReentry){
+            		command = input.nextLine();
+            	}
             	command = input.nextLine();
             	
                 if(command.equalsIgnoreCase("list animals"))
             	//if(command == 1)
                 {
-                    disp.displayList(new ArrayList<String> (animals.getNameToIndexList().keySet()));
+                    disp.displayCurrList(new ArrayList<String> (animals.getNameToIndexList().keySet()),animalsKilled);
                 }
                 else if(command.equalsIgnoreCase("list weapons"))
             	//else if(command == 2)
                 {
-                    disp.displayList(new ArrayList<String>( weapons.getNameToIndexList().keySet()));
+                    disp.displayCurrList(new ArrayList<String>( weapons.getNameToIndexList().keySet()),weaponsUsed);
                 }
                 else if(command.equalsIgnoreCase("hunt"))
             	//else if(command == 3)
@@ -102,25 +108,47 @@ public class IOController {
                         timer.start();
                     }
                     disp.hunt();
+                    isNotReentry = false;
                 }
             	//else if(command == 4)
                 else if(command.equalsIgnoreCase("exit"))
             	{ 
             		System.exit(1);
             	}
-                else if(command.equalsIgnoreCase("help"))
+                else
                 {
-                	System.out.println("I did not understand");
+                	System.out.println("Invalid.");
+                	isNotReentry = true;
                 }
             } 
             System.out.println("Replay the game?[Y/N]");
-            if(disp.inputString().equalsIgnoreCase("n")){
-            	isExitGame = true;
-            	System.out.println("The hunter left the forest!");
-            }
+            String exitComm = new String();
+            do{
+            	exitComm = disp.inputString();
+	            if(exitComm.equalsIgnoreCase("n")){
+	            	isExitGame = true;
+	            	System.out.println("The hunter left the forest!");
+	            }
+	            else if(exitComm.equalsIgnoreCase("y")){
+	            	startedHunting = false;
+	            }
+	            else{
+	            	System.out.println("Enter Y/N");
+	            	//exitComm = disp.inputString();
+	            }
+            }while(!exitComm.equalsIgnoreCase("y")&& !exitComm.equalsIgnoreCase("n"));
         }
     }
-    
+    public void displayCurrList(ArrayList<String> list,ArrayList<String> exList){
+    	System.out.println();
+        for(String s: list)
+        {
+        	if(!exList.contains(s)){
+        		System.out.println(s);
+        	}
+        }
+        System.out.println();
+    }
     public void displayList(ArrayList<String> map){
         System.out.println();
         for(String s: map)
@@ -140,73 +168,73 @@ public class IOController {
     	int resultKey;
     	boolean isAnimalSelected = false;
     	long timeInSecs = 0;
-    	while(true){
-    		displayHuntGrid();
-            //test
-    		System.out.print("Please select an animal:");
-			animal = inputString();
-    		do{
-    			if(!level.huntMap.keySet().contains(animal)){
-    				if (animals.getAnimalList().containsValue(animal)){
-        				System.out.print("The animal has been killed! Select another animal: ");
-        			}
-    				else if (!animals.getAnimalList().containsValue(animal)){
-    					System.out.print("This animal is not in the forest. Select another animal: ");
-    				}
-    				animal = inputString();
+    	//while(true){
+    	displayHuntGrid();
+    	//test
+    	System.out.print("Please select an animal:");
+    	animal = inputString();
+    	do{
+    		if(!level.huntMap.keySet().contains(animal)){
+    			if (animals.getAnimalList().containsValue(animal)){
+    				System.out.print("The animal has been killed! Select another animal: ");
     			}
-    			else
-    			{
-    				isAnimalSelected = true;
-    				System.out.println("Weapon checklist for "+animal+":");
-    				displayList(level.huntMap.get(animal));
+    			else if (!animals.getAnimalList().containsValue(animal)){
+    				System.out.print("This animal is not in the forest. Select another animal: ");
     			}
-    		}while(!isAnimalSelected); 
-    		turnCount = 0;
-    		System.out.print("Please select a weapon:");
-			weapon = inputString();
-    		do{
-    			timeInSecs = timer.getElapsedTimeSecs();
-    			++turnCount;
-    			resultKey = level.hunt(animal, weapon, timeInSecs, turnCount);
-    			if(resultKey == Constants.WEAPON_NOT_FOUND || resultKey == Constants.WEAPON_USED){
-    				isDone = false;
-    				System.out.println(resultMap.get(resultKey));
-    				weapon = inputString();
-    			}
-    			else{
-    				isDone = true;
-    			}
-    		}while(!isDone);
-    		
-    		if(resultKey == Constants.CONTINUE){
-    			animalsKilled.add(animal);
-    			weaponsUsed.add(weapon);
-    			System.out.println("Animal killed: "+animal);
-    			System.out.println("Weapon used: "+ weapon);
-    			System.out.println("Number of animals left: " + level.animalsLeft);
-    			//displayList(level.huntMap.get(animal));
+    			animal = inputString();
     		}
     		else
     		{
-    			if(resultKey == Constants.LOST){
-    				hasLost = true;
-    				System.out.println(resultMap.get(Constants.LOST));
-    			}
-    			else if (resultKey == Constants.WON || resultKey == Constants.WON_WITH_TIME){
-    				hasWon = true;
-    				timer.stop();
-    				if(level.isTimeNeeded){
-    					System.out.println("Time taken to complete(in seconds): " + timeInSecs);
-    				}
-    				System.out.println(resultMap.get(Constants.WON));
-    				if (resultKey == Constants.WON_WITH_TIME){
-    					System.out.println(resultMap.get(Constants.WON_WITH_TIME));
-    				}
-    			}
-    			return;
+    			isAnimalSelected = true;
+    			System.out.println("Weapon checklist for "+animal+":");
+    			displayList(level.huntMap.get(animal));
     		}
+    	}while(!isAnimalSelected); 
+    	turnCount = 0;
+    	System.out.print("Please select a weapon:");
+    	weapon = inputString();
+    	do{
+    		timeInSecs = timer.getElapsedTimeSecs();
+    		++turnCount;
+    		resultKey = level.hunt(animal, weapon, timeInSecs, turnCount);
+    		if(resultKey == Constants.WEAPON_NOT_FOUND || resultKey == Constants.WEAPON_USED){
+    			isDone = false;
+    			System.out.println(resultMap.get(resultKey));
+    			weapon = inputString();
+    		}
+    		else{
+    			isDone = true;
+    		}
+    	}while(!isDone);
+
+    	if(resultKey == Constants.CONTINUE){
+    		animalsKilled.add(animal);
+    		weaponsUsed.add(weapon);
+    		System.out.println("Animal killed: "+animal);
+    		System.out.println("Weapon used: "+ weapon);
+    		System.out.println("Number of animals left: " + level.animalsLeft);
+    		//displayList(level.huntMap.get(animal));
     	}
+    	else
+    	{
+    		if(resultKey == Constants.LOST){
+    			hasLost = true;
+    			System.out.println(resultMap.get(Constants.LOST));
+    		}
+    		else if (resultKey == Constants.WON || resultKey == Constants.WON_WITH_TIME){
+    			hasWon = true;
+    			timer.stop();
+    			if(level.isTimeNeeded){
+    				System.out.println("Time taken to complete(in seconds): " + timeInSecs);
+    			}
+    			System.out.println(resultMap.get(Constants.WON));
+    			if (resultKey == Constants.WON_WITH_TIME){
+    				System.out.println(resultMap.get(Constants.WON_WITH_TIME));
+    			}
+    		}
+    		return;
+    	}
+    	//}
     }
     
     public void displayHuntGrid(){
