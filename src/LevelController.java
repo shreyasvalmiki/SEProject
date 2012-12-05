@@ -20,6 +20,7 @@ public class LevelController {
     protected HashMap<Integer,String> weaponIndexList = new HashMap<Integer, String>();
     protected boolean isLoser = false;
     protected boolean isWinner = false;
+    protected int wrongAttemptCount;
     
     public HashMap<Integer,ArrayList<Integer>> animalWeaponMap = new HashMap<Integer, ArrayList<Integer>>();
     public HashMap<String,ArrayList<String>> huntMap = new HashMap<String, ArrayList<String>>();
@@ -36,6 +37,7 @@ public class LevelController {
     	isLoser = false;
     	isWinner = false;
     	animalsLeft = 5;
+    	wrongAttemptCount = 0;
         animalWeaponMap = mapper.getAnimalWeaponMap();
         huntMap = mapper.getHuntMap();
         initMap = (HashMap<Integer, ArrayList<Integer>>) animalWeaponMap.clone();
@@ -43,7 +45,6 @@ public class LevelController {
         animalIndexList = animals.getAnimalList();
         weaponNameList = weapons.getNameToIndexList();
         weaponIndexList = weapons.getWeaponList();
-        
     }
     public boolean hasWon(){
     	if(animalWeaponMap.size() == 0){
@@ -73,6 +74,7 @@ public class LevelController {
     	}
     	else if(!currChecklist.contains(weapons.getNameToIndexList().get(weapon)))
     	{
+    		++wrongAttemptCount;
     		return Constants.WEAPON_USED;
     	}
     	else

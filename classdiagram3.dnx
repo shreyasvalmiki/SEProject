@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.2/Umlnotation" xmi:id="_ouov8T5iEeKxBbeee6LDTA" type="Class" name="classdiagram3.dnx">
+  <eAnnotations xmi:id="_ouov8z5iEeKxBbeee6LDTA" source="com.ibm.xtools.common.ui.reduction.editingCapabilities">
+    <details xmi:id="_ouov9D5iEeKxBbeee6LDTA" key="com.ibm.xtools.activities.javaVisualizerActivity" value="1"/>
+  </eAnnotations>
+  <children xmi:id="_q0GAkD5iEeKxBbeee6LDTA">
+    <children xmi:id="_q0PKgD5iEeKxBbeee6LDTA" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_q0PKgT5iEeKxBbeee6LDTA" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_q0PKgj5iEeKxBbeee6LDTA" type="Stereotype"/>
+    <children xmi:id="_q0PKgz5iEeKxBbeee6LDTA" type="Name"/>
+    <children xmi:id="_q0PKhD5iEeKxBbeee6LDTA" type="Parent"/>
+    <children xmi:id="_q0PKhT5iEeKxBbeee6LDTA" visible="false" type="ANNOTATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_q0PKhj5iEeKxBbeee6LDTA"/>
+    </children>
+    <children xmi:id="_q0Y7gD5iEeKxBbeee6LDTA" type="ANNOTATED_ATTRIBUTE_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_q0Y7gT5iEeKxBbeee6LDTA"/>
+    </children>
+    <children xmi:id="_q0Y7gj5iEeKxBbeee6LDTA" type="ANNOTATED_OPERATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_q0Y7gz5iEeKxBbeee6LDTA"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_q0GAkT5iEeKxBbeee6LDTA" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=Level3Controller%5Bjcu%5Ename=Level3Controller.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_q0GAkj5iEeKxBbeee6LDTA" x="18386" y="39942"/>
+  </children>
+  <children xmi:id="_q0Y7hD5iEeKxBbeee6LDTA">
+    <children xmi:id="_q0Y7hz5iEeKxBbeee6LDTA" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_q0Y7iD5iEeKxBbeee6LDTA" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_q0Y7iT5iEeKxBbeee6LDTA" type="Stereotype"/>
+    <children xmi:id="_q0Y7ij5iEeKxBbeee6LDTA" type="Name"/>
+    <children xmi:id="_q0Y7iz5iEeKxBbeee6LDTA" type="Parent"/>
+    <children xmi:id="_q0Y7jD5iEeKxBbeee6LDTA" visible="false" type="ANNOTATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_q0Y7jT5iEeKxBbeee6LDTA"/>
+    </children>
+    <children xmi:id="_q0iFcD5iEeKxBbeee6LDTA" type="ANNOTATED_ATTRIBUTE_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_q0iFcT5iEeKxBbeee6LDTA"/>
+    </children>
+    <children xmi:id="_q0iFcj5iEeKxBbeee6LDTA" type="ANNOTATED_OPERATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_q0iFcz5iEeKxBbeee6LDTA"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_q0Y7hT5iEeKxBbeee6LDTA" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=Constants%5Bjcu%5Ename=Constants.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_q0Y7hj5iEeKxBbeee6LDTA" x="24726" y="44380"/>
+  </children>
+  <children xmi:id="_q0iFdD5iEeKxBbeee6LDTA">
+    <children xmi:id="_q0iFdz5iEeKxBbeee6LDTA" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_q0iFeD5iEeKxBbeee6LDTA" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_q0iFeT5iEeKxBbeee6LDTA" type="Stereotype"/>
+    <children xmi:id="_q0iFej5iEeKxBbeee6LDTA" type="Name"/>
+    <children xmi:id="_q0iFez5iEeKxBbeee6LDTA" type="Parent"/>
+    <children xmi:id="_q0iFfD5iEeKxBbeee6LDTA" visible="false" type="ANNOTATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_q0iFfT5iEeKxBbeee6LDTA"/>
+    </children>
+    <children xmi:id="_q0iFfj5iEeKxBbeee6LDTA" type="ANNOTATED_ATTRIBUTE_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_q0iFfz5iEeKxBbeee6LDTA"/>
+    </children>
+    <children xmi:id="_q0iFgD5iEeKxBbeee6LDTA" type="ANNOTATED_OPERATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_q0iFgT5iEeKxBbeee6LDTA"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_q0iFdT5iEeKxBbeee6LDTA" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=LevelController%5Bjcu%5Ename=LevelController.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_q0iFdj5iEeKxBbeee6LDTA" x="15533" y="26945"/>
+  </children>
+  <children xmi:id="_q0iFgj5iEeKxBbeee6LDTA">
+    <children xmi:id="_q0iFhT5iEeKxBbeee6LDTA" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_q0iFhj5iEeKxBbeee6LDTA" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_q0iFhz5iEeKxBbeee6LDTA" type="Stereotype"/>
+    <children xmi:id="_q0iFiD5iEeKxBbeee6LDTA" type="Name"/>
+    <children xmi:id="_q0iFiT5iEeKxBbeee6LDTA" type="Parent"/>
+    <children xmi:id="_q0iFij5iEeKxBbeee6LDTA" visible="false" type="ANNOTATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_q0iFiz5iEeKxBbeee6LDTA"/>
+    </children>
+    <children xmi:id="_q0r2cD5iEeKxBbeee6LDTA" type="ANNOTATED_ATTRIBUTE_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_q0r2cT5iEeKxBbeee6LDTA"/>
+    </children>
+    <children xmi:id="_q0r2cj5iEeKxBbeee6LDTA" type="ANNOTATED_OPERATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_q0r2cz5iEeKxBbeee6LDTA"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_q0iFgz5iEeKxBbeee6LDTA" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=Level1Controller%5Bjcu%5Ename=Level1Controller.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_q0iFhD5iEeKxBbeee6LDTA" x="9827" y="23141"/>
+  </children>
+  <children xmi:id="_q0r2dD5iEeKxBbeee6LDTA">
+    <children xmi:id="_q0r2dz5iEeKxBbeee6LDTA" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_q0r2eD5iEeKxBbeee6LDTA" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_q0r2eT5iEeKxBbeee6LDTA" type="Stereotype"/>
+    <children xmi:id="_q0r2ej5iEeKxBbeee6LDTA" type="Name"/>
+    <children xmi:id="_q0r2ez5iEeKxBbeee6LDTA" type="Parent"/>
+    <children xmi:id="_q0r2fD5iEeKxBbeee6LDTA" visible="false" type="ANNOTATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_q0r2fT5iEeKxBbeee6LDTA"/>
+    </children>
+    <children xmi:id="_q0r2fj5iEeKxBbeee6LDTA" type="ANNOTATED_ATTRIBUTE_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_q0r2fz5iEeKxBbeee6LDTA"/>
+    </children>
+    <children xmi:id="_q0r2gD5iEeKxBbeee6LDTA" type="ANNOTATED_OPERATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_q0r2gT5iEeKxBbeee6LDTA"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_q0r2dT5iEeKxBbeee6LDTA" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=AnimalWeaponMapper%5Bjcu%5Ename=AnimalWeaponMapper.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_q0r2dj5iEeKxBbeee6LDTA" x="12363" y="44380"/>
+  </children>
+  <children xmi:id="_q0r2gj5iEeKxBbeee6LDTA">
+    <children xmi:id="_q0r2hT5iEeKxBbeee6LDTA" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_q0r2hj5iEeKxBbeee6LDTA" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_q0r2hz5iEeKxBbeee6LDTA" type="Stereotype"/>
+    <children xmi:id="_q0r2iD5iEeKxBbeee6LDTA" type="Name"/>
+    <children xmi:id="_q0r2iT5iEeKxBbeee6LDTA" type="Parent"/>
+    <children xmi:id="_q0r2ij5iEeKxBbeee6LDTA" visible="false" type="ANNOTATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_q0r2iz5iEeKxBbeee6LDTA"/>
+    </children>
+    <children xmi:id="_q0r2jD5iEeKxBbeee6LDTA" type="ANNOTATED_ATTRIBUTE_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_q0r2jT5iEeKxBbeee6LDTA"/>
+    </children>
+    <children xmi:id="_q0r2jj5iEeKxBbeee6LDTA" type="ANNOTATED_OPERATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_q0r2jz5iEeKxBbeee6LDTA"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_q0r2gz5iEeKxBbeee6LDTA" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=Animals%5Bjcu%5Ename=Animals.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_q0r2hD5iEeKxBbeee6LDTA" x="19654" y="56426"/>
+  </children>
+  <children xmi:id="_q01ncD5iEeKxBbeee6LDTA">
+    <children xmi:id="_q01ncz5iEeKxBbeee6LDTA" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_q01ndD5iEeKxBbeee6LDTA" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_q01ndT5iEeKxBbeee6LDTA" type="Stereotype"/>
+    <children xmi:id="_q01ndj5iEeKxBbeee6LDTA" type="Name"/>
+    <children xmi:id="_q01ndz5iEeKxBbeee6LDTA" type="Parent"/>
+    <children xmi:id="_q01neD5iEeKxBbeee6LDTA" visible="false" type="ANNOTATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_q01neT5iEeKxBbeee6LDTA"/>
+    </children>
+    <children xmi:id="_q01nej5iEeKxBbeee6LDTA" type="ANNOTATED_ATTRIBUTE_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_q01nez5iEeKxBbeee6LDTA"/>
+    </children>
+    <children xmi:id="_q01nfD5iEeKxBbeee6LDTA" type="ANNOTATED_OPERATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_q01nfT5iEeKxBbeee6LDTA"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_q01ncT5iEeKxBbeee6LDTA" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=Weapons%5Bjcu%5Ename=Weapons.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_q01ncj5iEeKxBbeee6LDTA" x="5389" y="56426"/>
+  </children>
+  <children xmi:id="_q01nfj5iEeKxBbeee6LDTA">
+    <children xmi:id="_q01ngT5iEeKxBbeee6LDTA" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_q01ngj5iEeKxBbeee6LDTA" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_q01ngz5iEeKxBbeee6LDTA" type="Stereotype"/>
+    <children xmi:id="_q01nhD5iEeKxBbeee6LDTA" type="Name"/>
+    <children xmi:id="_q01nhT5iEeKxBbeee6LDTA" type="Parent"/>
+    <children xmi:id="_q01nhj5iEeKxBbeee6LDTA" visible="false" type="ANNOTATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_q01nhz5iEeKxBbeee6LDTA"/>
+    </children>
+    <children xmi:id="_q01niD5iEeKxBbeee6LDTA" type="ANNOTATED_ATTRIBUTE_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_q01niT5iEeKxBbeee6LDTA"/>
+    </children>
+    <children xmi:id="_q01nij5iEeKxBbeee6LDTA" type="ANNOTATED_OPERATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_q01niz5iEeKxBbeee6LDTA"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_q01nfz5iEeKxBbeee6LDTA" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=LevelFactory%5Bjcu%5Ename=LevelFactory.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_q01ngD5iEeKxBbeee6LDTA" x="20288" y="17118"/>
+  </children>
+  <children xmi:id="_q01njD5iEeKxBbeee6LDTA">
+    <children xmi:id="_q01njz5iEeKxBbeee6LDTA" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_q01nkD5iEeKxBbeee6LDTA" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_q01nkT5iEeKxBbeee6LDTA" type="Stereotype"/>
+    <children xmi:id="_q01nkj5iEeKxBbeee6LDTA" type="Name"/>
+    <children xmi:id="_q01nkz5iEeKxBbeee6LDTA" type="Parent"/>
+    <children xmi:id="_q01nlD5iEeKxBbeee6LDTA" visible="false" type="ANNOTATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_q01nlT5iEeKxBbeee6LDTA"/>
+    </children>
+    <children xmi:id="_q01nlj5iEeKxBbeee6LDTA" type="ANNOTATED_ATTRIBUTE_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_q01nlz5iEeKxBbeee6LDTA"/>
+    </children>
+    <children xmi:id="_q01nmD5iEeKxBbeee6LDTA" type="ANNOTATED_OPERATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_q01nmT5iEeKxBbeee6LDTA"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_q01njT5iEeKxBbeee6LDTA" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=Level2Controller%5Bjcu%5Ename=Level2Controller.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_q01njj5iEeKxBbeee6LDTA" x="16801" y="23141"/>
+  </children>
+  <children xmi:id="_q01nmj5iEeKxBbeee6LDTA">
+    <children xmi:id="_q01nnT5iEeKxBbeee6LDTA" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_q01nnj5iEeKxBbeee6LDTA" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_q01nnz5iEeKxBbeee6LDTA" type="Stereotype"/>
+    <children xmi:id="_q01noD5iEeKxBbeee6LDTA" type="Name"/>
+    <children xmi:id="_q01noT5iEeKxBbeee6LDTA" type="Parent"/>
+    <children xmi:id="_q01noj5iEeKxBbeee6LDTA" visible="false" type="ANNOTATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_q01noz5iEeKxBbeee6LDTA"/>
+    </children>
+    <children xmi:id="_q0-xYD5iEeKxBbeee6LDTA" type="ANNOTATED_ATTRIBUTE_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_q0-xYT5iEeKxBbeee6LDTA"/>
+    </children>
+    <children xmi:id="_q0-xYj5iEeKxBbeee6LDTA" type="ANNOTATED_OPERATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_q0-xYz5iEeKxBbeee6LDTA"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_q01nmz5iEeKxBbeee6LDTA" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=IOController%5Bjcu%5Ename=IOController.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_q01nnD5iEeKxBbeee6LDTA" x="21873" y="5072"/>
+  </children>
+  <children xmi:id="_q0-xZD5iEeKxBbeee6LDTA">
+    <children xmi:id="_q0-xZz5iEeKxBbeee6LDTA" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_q0-xaD5iEeKxBbeee6LDTA" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_q0-xaT5iEeKxBbeee6LDTA" type="Stereotype"/>
+    <children xmi:id="_q0-xaj5iEeKxBbeee6LDTA" type="Name"/>
+    <children xmi:id="_q0-xaz5iEeKxBbeee6LDTA" type="Parent"/>
+    <children xmi:id="_q0-xbD5iEeKxBbeee6LDTA" visible="false" type="ANNOTATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_q0-xbT5iEeKxBbeee6LDTA"/>
+    </children>
+    <children xmi:id="_q0-xbj5iEeKxBbeee6LDTA" type="ANNOTATED_ATTRIBUTE_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_q0-xbz5iEeKxBbeee6LDTA"/>
+    </children>
+    <children xmi:id="_q0-xcD5iEeKxBbeee6LDTA" type="ANNOTATED_OPERATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_q0-xcT5iEeKxBbeee6LDTA"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_q0-xZT5iEeKxBbeee6LDTA" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=GameTimer%5Bjcu%5Ename=GameTimer.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_q0-xZj5iEeKxBbeee6LDTA" x="13948" y="17118"/>
+  </children>
+  <children xmi:id="_q0-xcj5iEeKxBbeee6LDTA">
+    <children xmi:id="_q0-xdT5iEeKxBbeee6LDTA" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_q0-xdj5iEeKxBbeee6LDTA" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_q0-xdz5iEeKxBbeee6LDTA" type="Stereotype"/>
+    <children xmi:id="_q0-xeD5iEeKxBbeee6LDTA" type="Name"/>
+    <children xmi:id="_q0-xeT5iEeKxBbeee6LDTA" type="Parent"/>
+    <children xmi:id="_q0-xej5iEeKxBbeee6LDTA" visible="false" type="ANNOTATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_q0-xez5iEeKxBbeee6LDTA"/>
+    </children>
+    <children xmi:id="_q0-xfD5iEeKxBbeee6LDTA" type="ANNOTATED_ATTRIBUTE_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_q0-xfT5iEeKxBbeee6LDTA"/>
+    </children>
+    <children xmi:id="_q0-xfj5iEeKxBbeee6LDTA" type="ANNOTATED_OPERATION_COMPARTMENT">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_q0-xfz5iEeKxBbeee6LDTA"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLShapeStyle" xmi:id="_q0-xcz5iEeKxBbeee6LDTA" showStereotype="Label"/>
+    <element xmi:type="uml:Class" href="mmi:///#jsrctype%5Ename=Results%5Bjcu%5Ename=Results.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D$uml.Class"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_q0-xdD5iEeKxBbeee6LDTA" x="30432" y="5072"/>
+  </children>
+  <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_ouov8j5iEeKxBbeee6LDTA"/>
+  <element xsi:nil="true"/>
+  <edges xmi:id="_rHSCUD5iEeKxBbeee6LDTA" source="_q0GAkD5iEeKxBbeee6LDTA" target="_q0Y7hD5iEeKxBbeee6LDTA">
+    <children xmi:id="_rHSCUz5iEeKxBbeee6LDTA" type="KindLabel">
+      <children xmi:id="_rHSCVT5iEeKxBbeee6LDTA" type="Stereotype"/>
+      <children xmi:id="_rHSCVz5iEeKxBbeee6LDTA" type="Kind"/>
+      <children xmi:id="_rHSCVj5iEeKxBbeee6LDTA" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rHSCVD5iEeKxBbeee6LDTA" y="-186"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_rHSCUT5iEeKxBbeee6LDTA" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=Level3Controller%5Bjcu%5Ename=Level3Controller.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=Constants%5Bjcu%5Ename=Constants.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rHSCUj5iEeKxBbeee6LDTA" points="[0, 0, -3006, -1586]$[3007, 1586, 1, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgPyj5iEeKxBbeee6LDTA" id="(0.9679441,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgPyz5iEeKxBbeee6LDTA" id="(0.0908924,0.0)"/>
+  </edges>
+  <edges xmi:id="_rHSCWD5iEeKxBbeee6LDTA" source="_q0GAkD5iEeKxBbeee6LDTA" target="_q0iFdD5iEeKxBbeee6LDTA">
+    <children xmi:id="_rHSCWz5iEeKxBbeee6LDTA" type="KindLabel">
+      <children xmi:id="_rHSCXT5iEeKxBbeee6LDTA" type="Stereotype"/>
+      <children xmi:id="_rHbzUD5iEeKxBbeee6LDTA" type="Kind"/>
+      <children xmi:id="_rHSCXj5iEeKxBbeee6LDTA" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rHSCXD5iEeKxBbeee6LDTA" y="-186"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_rHSCWT5iEeKxBbeee6LDTA" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=Level3Controller%5Bjcu%5Ename=Level3Controller.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=LevelController%5Bjcu%5Ename=LevelController.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rHSCWj5iEeKxBbeee6LDTA" points="[1, 0, 0, 1586]$[1, -1586, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgPyD5iEeKxBbeee6LDTA" id="(0.49987948,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgPyT5iEeKxBbeee6LDTA" id="(0.5740051,1.0)"/>
+  </edges>
+  <edges xmi:id="_rHbzUT5iEeKxBbeee6LDTA" source="_q0GAkD5iEeKxBbeee6LDTA" target="_q0r2dD5iEeKxBbeee6LDTA">
+    <children xmi:id="_rHbzVD5iEeKxBbeee6LDTA" type="KindLabel">
+      <children xmi:id="_rHbzVj5iEeKxBbeee6LDTA" type="Stereotype"/>
+      <children xmi:id="_rHbzWD5iEeKxBbeee6LDTA" type="Kind"/>
+      <children xmi:id="_rHbzVz5iEeKxBbeee6LDTA" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rHbzVT5iEeKxBbeee6LDTA" y="-186"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_rHbzUj5iEeKxBbeee6LDTA" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=Level3Controller%5Bjcu%5Ename=Level3Controller.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=AnimalWeaponMapper%5Bjcu%5Ename=AnimalWeaponMapper.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rHbzUz5iEeKxBbeee6LDTA" points="[1, 0, 1, -1586]$[1, 1586, 1, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgPxj5iEeKxBbeee6LDTA" id="(0.49987948,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgPxz5iEeKxBbeee6LDTA" id="(0.9436181,0.0)"/>
+  </edges>
+  <edges xmi:id="_rHbzWT5iEeKxBbeee6LDTA" source="_q0GAkD5iEeKxBbeee6LDTA" target="_q0r2gj5iEeKxBbeee6LDTA">
+    <children xmi:id="_rHbzXD5iEeKxBbeee6LDTA" type="KindLabel">
+      <children xmi:id="_rHbzXj5iEeKxBbeee6LDTA" type="Stereotype"/>
+      <children xmi:id="_rHbzYD5iEeKxBbeee6LDTA" type="Kind"/>
+      <children xmi:id="_rHbzXz5iEeKxBbeee6LDTA" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rHbzXT5iEeKxBbeee6LDTA" y="-186"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_rHbzWj5iEeKxBbeee6LDTA" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=Level3Controller%5Bjcu%5Ename=Level3Controller.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=Animals%5Bjcu%5Ename=Animals.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rHbzWz5iEeKxBbeee6LDTA" points="[0, 0, -661, -13705]$[661, 1586, 0, -12119]$[661, 13705, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgP3j5iEeKxBbeee6LDTA" id="(0.9358882,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgP3z5iEeKxBbeee6LDTA" id="(0.40121922,0.0)"/>
+  </edges>
+  <edges xmi:id="_rHbzYT5iEeKxBbeee6LDTA" source="_q0GAkD5iEeKxBbeee6LDTA" target="_q01ncD5iEeKxBbeee6LDTA">
+    <children xmi:id="_rHbzZD5iEeKxBbeee6LDTA" type="KindLabel">
+      <children xmi:id="_rHbzZj5iEeKxBbeee6LDTA" type="Stereotype"/>
+      <children xmi:id="_rHbzaD5iEeKxBbeee6LDTA" type="Kind"/>
+      <children xmi:id="_rHbzZz5iEeKxBbeee6LDTA" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rHbzZT5iEeKxBbeee6LDTA" y="-186"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_rHbzYj5iEeKxBbeee6LDTA" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=Level3Controller%5Bjcu%5Ename=Level3Controller.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=Weapons%5Bjcu%5Ename=Weapons.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rHbzYz5iEeKxBbeee6LDTA" points="[0, 0, 9430, -13705]$[0, 12118, 9430, -1587]$[-9429, 13705, 1, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgP3D5iEeKxBbeee6LDTA" id="(0.9040733,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgP3T5iEeKxBbeee6LDTA" id="(0.89910424,0.0)"/>
+  </edges>
+  <edges xmi:id="_rHbzaT5iEeKxBbeee6LDTA" source="_q0GAkD5iEeKxBbeee6LDTA" target="_q0iFdD5iEeKxBbeee6LDTA">
+    <children xmi:id="_rHbzbD5iEeKxBbeee6LDTA" type="NameLabel">
+      <children xmi:id="_rHbzbj5iEeKxBbeee6LDTA" type="Stereotype"/>
+      <children xmi:id="_rHbzbz5iEeKxBbeee6LDTA" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rHbzbT5iEeKxBbeee6LDTA" y="-186"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_rHbzaj5iEeKxBbeee6LDTA" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Generalization" href="mmi:///#jgen%5Bjsrctype%5Ename=Level3Controller%5Bjcu%5Ename=Level3Controller.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=LevelController%5Bjcu%5Ename=LevelController.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D$uml.Generalization"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rHbzaz5iEeKxBbeee6LDTA" points="[1, 0, 0, 1586]$[1, -1586, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgPwD5iEeKxBbeee6LDTA" id="(0.49987948,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgPwT5iEeKxBbeee6LDTA" id="(0.5740051,1.0)"/>
+  </edges>
+  <edges xmi:id="_rHbzcD5iEeKxBbeee6LDTA" source="_q0iFdD5iEeKxBbeee6LDTA" target="_q0r2dD5iEeKxBbeee6LDTA">
+    <children xmi:id="_rHbzcz5iEeKxBbeee6LDTA" type="KindLabel">
+      <children xmi:id="_rHbzdT5iEeKxBbeee6LDTA" type="Stereotype"/>
+      <children xmi:id="_rHbzdz5iEeKxBbeee6LDTA" type="Kind"/>
+      <children xmi:id="_rHbzdj5iEeKxBbeee6LDTA" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rHbzdD5iEeKxBbeee6LDTA" y="-186"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_rHbzcT5iEeKxBbeee6LDTA" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=LevelController%5Bjcu%5Ename=LevelController.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=AnimalWeaponMapper%5Bjcu%5Ename=AnimalWeaponMapper.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rHbzcj5iEeKxBbeee6LDTA" points="[0, 0, 0, -5919]$[0, 5919, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgP4j5iEeKxBbeee6LDTA" id="(0.12625088,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgP4z5iEeKxBbeee6LDTA" id="(0.49994236,0.0)"/>
+  </edges>
+  <edges xmi:id="_rHbzeD5iEeKxBbeee6LDTA" source="_q0iFdD5iEeKxBbeee6LDTA" target="_q0r2gj5iEeKxBbeee6LDTA">
+    <children xmi:id="_rHbzez5iEeKxBbeee6LDTA" type="KindLabel">
+      <children xmi:id="_rHbzfT5iEeKxBbeee6LDTA" type="Stereotype"/>
+      <children xmi:id="_rHbzfz5iEeKxBbeee6LDTA" type="Kind"/>
+      <children xmi:id="_rHbzfj5iEeKxBbeee6LDTA" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rHbzfD5iEeKxBbeee6LDTA" y="-186"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_rHbzeT5iEeKxBbeee6LDTA" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=LevelController%5Bjcu%5Ename=LevelController.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=Animals%5Bjcu%5Ename=Animals.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rHbzej5iEeKxBbeee6LDTA" points="[0, 0, 0, -18038]$[0, 18038, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgP5D5iEeKxBbeee6LDTA" id="(0.9536886,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgP5T5iEeKxBbeee6LDTA" id="(0.4998756,0.0)"/>
+  </edges>
+  <edges xmi:id="_rHbzgD5iEeKxBbeee6LDTA" source="_q0iFdD5iEeKxBbeee6LDTA" target="_q0Y7hD5iEeKxBbeee6LDTA">
+    <children xmi:id="_rHbzgz5iEeKxBbeee6LDTA" type="KindLabel">
+      <children xmi:id="_rHbzhT5iEeKxBbeee6LDTA" type="Stereotype"/>
+      <children xmi:id="_rHbzhz5iEeKxBbeee6LDTA" type="Kind"/>
+      <children xmi:id="_rHbzhj5iEeKxBbeee6LDTA" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rHbzhD5iEeKxBbeee6LDTA" y="-186"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_rHbzgT5iEeKxBbeee6LDTA" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=LevelController%5Bjcu%5Ename=LevelController.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=Constants%5Bjcu%5Ename=Constants.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rHbzgj5iEeKxBbeee6LDTA" points="[0, 0, -1981, -5919]$[594, 1586, -1387, -4333]$[596, 4332, -1385, -1587]$[1982, 5919, 1, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgP5j5iEeKxBbeee6LDTA" id="(0.9768443,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgP5z5iEeKxBbeee6LDTA" id="(0.1817848,0.0)"/>
+  </edges>
+  <edges xmi:id="_rHbziD5iEeKxBbeee6LDTA" source="_q0iFdD5iEeKxBbeee6LDTA" target="_q01ncD5iEeKxBbeee6LDTA">
+    <children xmi:id="_rHbziz5iEeKxBbeee6LDTA" type="KindLabel">
+      <children xmi:id="_rHbzjT5iEeKxBbeee6LDTA" type="Stereotype"/>
+      <children xmi:id="_rHbzjz5iEeKxBbeee6LDTA" type="Kind"/>
+      <children xmi:id="_rHbzjj5iEeKxBbeee6LDTA" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rHbzjD5iEeKxBbeee6LDTA" y="-186"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_rHbziT5iEeKxBbeee6LDTA" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=LevelController%5Bjcu%5Ename=LevelController.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=Weapons%5Bjcu%5Ename=Weapons.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rHbzij5iEeKxBbeee6LDTA" points="[0, 0, 4983, -18038]$[-1812, 4332, 3171, -13706]$[-4982, 5919, 1, -12119]$[-4982, 18038, 1, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgP4D5iEeKxBbeee6LDTA" id="(0.06306726,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgP4T5iEeKxBbeee6LDTA" id="(0.69743717,0.0)"/>
+  </edges>
+  <edges xmi:id="_rHbzkD5iEeKxBbeee6LDTA" source="_q0iFgj5iEeKxBbeee6LDTA" target="_q0iFdD5iEeKxBbeee6LDTA">
+    <children xmi:id="_rHbzkz5iEeKxBbeee6LDTA" type="KindLabel">
+      <children xmi:id="_rHbzlT5iEeKxBbeee6LDTA" type="Stereotype"/>
+      <children xmi:id="_rHbzlz5iEeKxBbeee6LDTA" type="Kind"/>
+      <children xmi:id="_rHbzlj5iEeKxBbeee6LDTA" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rHbzlD5iEeKxBbeee6LDTA" y="-186"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_rHbzkT5iEeKxBbeee6LDTA" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=Level1Controller%5Bjcu%5Ename=Level1Controller.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=LevelController%5Bjcu%5Ename=LevelController.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rHbzkj5iEeKxBbeee6LDTA" points="[0, 0, -4294, -1586]$[4295, 1586, 1, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgP1j5iEeKxBbeee6LDTA" id="(0.62527287,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgP1z5iEeKxBbeee6LDTA" id="(0.13544333,0.0)"/>
+  </edges>
+  <edges xmi:id="_rHbzmD5iEeKxBbeee6LDTA" source="_q0iFgj5iEeKxBbeee6LDTA" target="_q0r2dD5iEeKxBbeee6LDTA">
+    <children xmi:id="_rHbzmz5iEeKxBbeee6LDTA" type="KindLabel">
+      <children xmi:id="_rHbznT5iEeKxBbeee6LDTA" type="Stereotype"/>
+      <children xmi:id="_rHbznz5iEeKxBbeee6LDTA" type="Kind"/>
+      <children xmi:id="_rHbznj5iEeKxBbeee6LDTA" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rHbznD5iEeKxBbeee6LDTA" y="-186"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_rHbzmT5iEeKxBbeee6LDTA" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=Level1Controller%5Bjcu%5Ename=Level1Controller.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=AnimalWeaponMapper%5Bjcu%5Ename=AnimalWeaponMapper.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rHbzmj5iEeKxBbeee6LDTA" points="[0, 0, -989, -18988]$[0, 13068, -989, -5920]$[990, 18988, 1, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgP7D5iEeKxBbeee6LDTA" id="(0.5003638,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgP7T5iEeKxBbeee6LDTA" id="(0.06860371,0.0)"/>
+  </edges>
+  <edges xmi:id="_rHbzoD5iEeKxBbeee6LDTA" source="_q0iFgj5iEeKxBbeee6LDTA" target="_q01ncD5iEeKxBbeee6LDTA">
+    <children xmi:id="_rHbzoz5iEeKxBbeee6LDTA" type="KindLabel">
+      <children xmi:id="_rHbzpT5iEeKxBbeee6LDTA" type="Stereotype"/>
+      <children xmi:id="_rHbzpz5iEeKxBbeee6LDTA" type="Kind"/>
+      <children xmi:id="_rHbzpj5iEeKxBbeee6LDTA" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rHbzpD5iEeKxBbeee6LDTA" y="-186"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_rHbzoT5iEeKxBbeee6LDTA" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=Level1Controller%5Bjcu%5Ename=Level1Controller.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=Weapons%5Bjcu%5Ename=Weapons.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rHbzoj5iEeKxBbeee6LDTA" points="[1, 0, 1348, -31107]$[-554, 1586, 793, -29521]$[-1347, 18988, 0, -12119]$[-1347, 31107, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgP6D5iEeKxBbeee6LDTA" id="(0.057724956,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgP6T5iEeKxBbeee6LDTA" id="(0.40146804,0.0)"/>
+  </edges>
+  <edges xmi:id="_rHbzqD5iEeKxBbeee6LDTA" source="_q0iFgj5iEeKxBbeee6LDTA" target="_q0Y7hD5iEeKxBbeee6LDTA">
+    <children xmi:id="_rHbzqz5iEeKxBbeee6LDTA" type="KindLabel">
+      <children xmi:id="_rHbzrT5iEeKxBbeee6LDTA" type="Stereotype"/>
+      <children xmi:id="_rHk9QD5iEeKxBbeee6LDTA" type="Kind"/>
+      <children xmi:id="_rHbzrj5iEeKxBbeee6LDTA" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rHbzrD5iEeKxBbeee6LDTA" y="-186"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_rHbzqT5iEeKxBbeee6LDTA" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=Level1Controller%5Bjcu%5Ename=Level1Controller.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=Constants%5Bjcu%5Ename=Constants.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rHbzqj5iEeKxBbeee6LDTA" points="[0, 0, -12972, -18988]$[11883, 1586, -1089, -17402]$[11885, 13068, -1087, -5920]$[12973, 18988, 1, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgP7j5iEeKxBbeee6LDTA" id="(0.87509096,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgP7z5iEeKxBbeee6LDTA" id="(0.27267718,0.0)"/>
+  </edges>
+  <edges xmi:id="_rHk9QT5iEeKxBbeee6LDTA" source="_q0iFgj5iEeKxBbeee6LDTA" target="_q0iFdD5iEeKxBbeee6LDTA">
+    <children xmi:id="_rHk9RD5iEeKxBbeee6LDTA" type="NameLabel">
+      <children xmi:id="_rHk9Rj5iEeKxBbeee6LDTA" type="Stereotype"/>
+      <children xmi:id="_rHk9Rz5iEeKxBbeee6LDTA" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rHk9RT5iEeKxBbeee6LDTA" y="-186"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_rHk9Qj5iEeKxBbeee6LDTA" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Generalization" href="mmi:///#jgen%5Bjsrctype%5Ename=Level1Controller%5Bjcu%5Ename=Level1Controller.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=LevelController%5Bjcu%5Ename=LevelController.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D$uml.Generalization"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rHk9Qz5iEeKxBbeee6LDTA" points="[0, 0, -4943, -1586]$[4944, 1586, 1, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgPxD5iEeKxBbeee6LDTA" id="(0.7501819,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgPxT5iEeKxBbeee6LDTA" id="(0.27088666,0.0)"/>
+  </edges>
+  <edges xmi:id="_rHk9SD5iEeKxBbeee6LDTA" source="_q0iFgj5iEeKxBbeee6LDTA" target="_q0r2gj5iEeKxBbeee6LDTA">
+    <children xmi:id="_rHk9Sz5iEeKxBbeee6LDTA" type="KindLabel">
+      <children xmi:id="_rHk9TT5iEeKxBbeee6LDTA" type="Stereotype"/>
+      <children xmi:id="_rHk9Tz5iEeKxBbeee6LDTA" type="Kind"/>
+      <children xmi:id="_rHk9Tj5iEeKxBbeee6LDTA" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rHk9TD5iEeKxBbeee6LDTA" y="-186"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_rHk9ST5iEeKxBbeee6LDTA" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=Level1Controller%5Bjcu%5Ename=Level1Controller.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=Animals%5Bjcu%5Ename=Animals.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rHk9Sj5iEeKxBbeee6LDTA" points="[0, 0, -10485, -31107]$[0, 29520, -10485, -1587]$[10485, 31107, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgP6j5iEeKxBbeee6LDTA" id="(0.11569246,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgP6z5iEeKxBbeee6LDTA" id="(0.13373974,0.0)"/>
+  </edges>
+  <edges xmi:id="_rHk9UD5iEeKxBbeee6LDTA" source="_q0r2dD5iEeKxBbeee6LDTA" target="_q01ncD5iEeKxBbeee6LDTA">
+    <children xmi:id="_rHk9Uz5iEeKxBbeee6LDTA" type="KindLabel">
+      <children xmi:id="_rHk9VT5iEeKxBbeee6LDTA" type="Stereotype"/>
+      <children xmi:id="_rHk9Vz5iEeKxBbeee6LDTA" type="Kind"/>
+      <children xmi:id="_rHk9Vj5iEeKxBbeee6LDTA" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rHk9VD5iEeKxBbeee6LDTA" y="-186"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_rHk9UT5iEeKxBbeee6LDTA" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=AnimalWeaponMapper%5Bjcu%5Ename=AnimalWeaponMapper.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=Weapons%5Bjcu%5Ename=Weapons.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rHk9Uj5iEeKxBbeee6LDTA" points="[0, 0, 3269, -1586]$[-3269, 1586, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgP2j5iEeKxBbeee6LDTA" id="(0.33333334,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgP2z5iEeKxBbeee6LDTA" id="(0.7983329,0.0)"/>
+  </edges>
+  <edges xmi:id="_rHk9WD5iEeKxBbeee6LDTA" source="_q0r2dD5iEeKxBbeee6LDTA" target="_q0r2gj5iEeKxBbeee6LDTA">
+    <children xmi:id="_rHk9Wz5iEeKxBbeee6LDTA" type="KindLabel">
+      <children xmi:id="_rHk9XT5iEeKxBbeee6LDTA" type="Stereotype"/>
+      <children xmi:id="_rHk9Xz5iEeKxBbeee6LDTA" type="Kind"/>
+      <children xmi:id="_rHk9Xj5iEeKxBbeee6LDTA" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rHk9XD5iEeKxBbeee6LDTA" y="-186"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_rHk9WT5iEeKxBbeee6LDTA" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=AnimalWeaponMapper%5Bjcu%5Ename=AnimalWeaponMapper.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=Animals%5Bjcu%5Ename=Animals.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rHk9Wj5iEeKxBbeee6LDTA" points="[0, 0, -3797, -1586]$[3797, 1586, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgP2D5iEeKxBbeee6LDTA" id="(0.6666667,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgP2T5iEeKxBbeee6LDTA" id="(0.26747948,0.0)"/>
+  </edges>
+  <edges xmi:id="_rHk9YD5iEeKxBbeee6LDTA" source="_q01nfj5iEeKxBbeee6LDTA" target="_q0GAkD5iEeKxBbeee6LDTA">
+    <children xmi:id="_rHk9Yz5iEeKxBbeee6LDTA" type="KindLabel">
+      <children xmi:id="_rHk9ZT5iEeKxBbeee6LDTA" type="Stereotype"/>
+      <children xmi:id="_rHk9Zz5iEeKxBbeee6LDTA" type="Kind"/>
+      <children xmi:id="_rHk9Zj5iEeKxBbeee6LDTA" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rHk9ZD5iEeKxBbeee6LDTA" y="-186"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_rHk9YT5iEeKxBbeee6LDTA" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=LevelFactory%5Bjcu%5Ename=LevelFactory.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=Level3Controller%5Bjcu%5Ename=Level3Controller.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rHk9Yj5iEeKxBbeee6LDTA" points="[1, 0, 1699, -21074]$[1324, 2560, 3022, -18514]$[2908, 4147, 4606, -16927]$[2908, 19487, 4606, -1587]$[-1697, 21074, 1, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgP8D5iEeKxBbeee6LDTA" id="(0.74966204,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgP8T5iEeKxBbeee6LDTA" id="(0.7498192,0.0)"/>
+  </edges>
+  <edges xmi:id="_rHk9aD5iEeKxBbeee6LDTA" source="_q01nfj5iEeKxBbeee6LDTA" target="_q0iFdD5iEeKxBbeee6LDTA">
+    <children xmi:id="_rHk9az5iEeKxBbeee6LDTA" type="KindLabel">
+      <children xmi:id="_rHk9bT5iEeKxBbeee6LDTA" type="Stereotype"/>
+      <children xmi:id="_rHk9bz5iEeKxBbeee6LDTA" type="Kind"/>
+      <children xmi:id="_rHk9bj5iEeKxBbeee6LDTA" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rHk9bD5iEeKxBbeee6LDTA" y="-186"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_rHk9aT5iEeKxBbeee6LDTA" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=LevelFactory%5Bjcu%5Ename=LevelFactory.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=LevelController%5Bjcu%5Ename=LevelController.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rHk9aj5iEeKxBbeee6LDTA" points="[1, 0, 0, -8005]$[1, 8005, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgP8j5iEeKxBbeee6LDTA" id="(0.49959448,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgP8z5iEeKxBbeee6LDTA" id="(0.7846172,0.0)"/>
+  </edges>
+  <edges xmi:id="_rHk9cD5iEeKxBbeee6LDTA" source="_q01nfj5iEeKxBbeee6LDTA" target="_q01njD5iEeKxBbeee6LDTA">
+    <children xmi:id="_rHk9cz5iEeKxBbeee6LDTA" type="KindLabel">
+      <children xmi:id="_rHk9dT5iEeKxBbeee6LDTA" type="Stereotype"/>
+      <children xmi:id="_rHk9dz5iEeKxBbeee6LDTA" type="Kind"/>
+      <children xmi:id="_rHk9dj5iEeKxBbeee6LDTA" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rHk9dD5iEeKxBbeee6LDTA" y="-186"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_rHk9cT5iEeKxBbeee6LDTA" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=LevelFactory%5Bjcu%5Ename=LevelFactory.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=Level2Controller%5Bjcu%5Ename=Level2Controller.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rHk9cj5iEeKxBbeee6LDTA" points="[1, 0, 2634, -4147]$[-1233, 2560, 1400, -1587]$[-2633, 4147, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgP0D5iEeKxBbeee6LDTA" id="(0.33306298,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgP0T5iEeKxBbeee6LDTA" id="(0.49987873,0.0)"/>
+  </edges>
+  <edges xmi:id="_rHk9eD5iEeKxBbeee6LDTA" source="_q01nfj5iEeKxBbeee6LDTA" target="_q0iFgj5iEeKxBbeee6LDTA">
+    <children xmi:id="_rHk9ez5iEeKxBbeee6LDTA" type="KindLabel">
+      <children xmi:id="_rHk9fT5iEeKxBbeee6LDTA" type="Stereotype"/>
+      <children xmi:id="_rHk9fz5iEeKxBbeee6LDTA" type="Kind"/>
+      <children xmi:id="_rHk9fj5iEeKxBbeee6LDTA" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rHk9fD5iEeKxBbeee6LDTA" y="-186"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_rHk9eT5iEeKxBbeee6LDTA" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=LevelFactory%5Bjcu%5Ename=LevelFactory.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=Level1Controller%5Bjcu%5Ename=Level1Controller.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rHk9ej5iEeKxBbeee6LDTA" points="[1, 0, 9159, -4147]$[-1013, 2560, 8145, -1587]$[-9158, 4147, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgPzj5iEeKxBbeee6LDTA" id="(0.16653149,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgPzz5iEeKxBbeee6LDTA" id="(0.49987873,0.0)"/>
+  </edges>
+  <edges xmi:id="_rHk9gD5iEeKxBbeee6LDTA" source="_q01njD5iEeKxBbeee6LDTA" target="_q0r2gj5iEeKxBbeee6LDTA">
+    <children xmi:id="_rHk9gz5iEeKxBbeee6LDTA" type="KindLabel">
+      <children xmi:id="_rHk9hT5iEeKxBbeee6LDTA" type="Stereotype"/>
+      <children xmi:id="_rHk9hz5iEeKxBbeee6LDTA" type="Kind"/>
+      <children xmi:id="_rHk9hj5iEeKxBbeee6LDTA" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rHk9hD5iEeKxBbeee6LDTA" y="-186"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_rHk9gT5iEeKxBbeee6LDTA" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=Level2Controller%5Bjcu%5Ename=Level2Controller.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=Animals%5Bjcu%5Ename=Animals.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rHk9gj5iEeKxBbeee6LDTA" points="[1, 0, -4668, -31107]$[7295, 1586, 2626, -29521]$[10364, 17401, 5695, -13706]$[11155, 18988, 6486, -12119]$[11155, 29520, 6486, -1587]$[4670, 31107, 1, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQqAxD5iEeKxBbeee6LDTA" id="(0.8331312,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQqAxT5iEeKxBbeee6LDTA" id="(0.6665837,0.0)"/>
+  </edges>
+  <edges xmi:id="_rHk9iD5iEeKxBbeee6LDTA" source="_q01njD5iEeKxBbeee6LDTA" target="_q01ncD5iEeKxBbeee6LDTA">
+    <children xmi:id="_rHk9iz5iEeKxBbeee6LDTA" type="KindLabel">
+      <children xmi:id="_rHk9jT5iEeKxBbeee6LDTA" type="Stereotype"/>
+      <children xmi:id="_rHk9jz5iEeKxBbeee6LDTA" type="Kind"/>
+      <children xmi:id="_rHk9jj5iEeKxBbeee6LDTA" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rHk9jD5iEeKxBbeee6LDTA" y="-186"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_rHk9iT5iEeKxBbeee6LDTA" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=Level2Controller%5Bjcu%5Ename=Level2Controller.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=Weapons%5Bjcu%5Ename=Weapons.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rHk9ij5iEeKxBbeee6LDTA" points="[0, 0, 8146, -31107]$[-4973, 1586, 3173, -29521]$[-4975, 13068, 3171, -18039]$[-6559, 14655, 1587, -16452]$[-6561, 17401, 1585, -13706]$[-8145, 18988, 1, -12119]$[-8145, 31107, 1, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgP9D5iEeKxBbeee6LDTA" id="(0.16662624,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgP9T5iEeKxBbeee6LDTA" id="(0.5001244,0.0)"/>
+  </edges>
+  <edges xmi:id="_rHk9kD5iEeKxBbeee6LDTA" source="_q01njD5iEeKxBbeee6LDTA" target="_q0r2dD5iEeKxBbeee6LDTA">
+    <children xmi:id="_rHk9kz5iEeKxBbeee6LDTA" type="KindLabel">
+      <children xmi:id="_rHk9lT5iEeKxBbeee6LDTA" type="Stereotype"/>
+      <children xmi:id="_rHk9lz5iEeKxBbeee6LDTA" type="Kind"/>
+      <children xmi:id="_rHk9lj5iEeKxBbeee6LDTA" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rHk9lD5iEeKxBbeee6LDTA" y="-186"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_rHk9kT5iEeKxBbeee6LDTA" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=Level2Controller%5Bjcu%5Ename=Level2Controller.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=AnimalWeaponMapper%5Bjcu%5Ename=AnimalWeaponMapper.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rHk9kj5iEeKxBbeee6LDTA" points="[0, 0, 4868, -18988]$[-3995, 1586, 873, -17402]$[-4867, 14655, 1, -4333]$[-4867, 18988, 1, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQqAwD5iEeKxBbeee6LDTA" id="(0.3332525,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQqAwT5iEeKxBbeee6LDTA" id="(0.13720742,0.0)"/>
+  </edges>
+  <edges xmi:id="_rHk9mD5iEeKxBbeee6LDTA" source="_q01njD5iEeKxBbeee6LDTA" target="_q0iFdD5iEeKxBbeee6LDTA">
+    <children xmi:id="_rHk9mz5iEeKxBbeee6LDTA" type="NameLabel">
+      <children xmi:id="_rHuuQD5iEeKxBbeee6LDTA" type="Stereotype"/>
+      <children xmi:id="_rHuuQT5iEeKxBbeee6LDTA" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rHk9nD5iEeKxBbeee6LDTA" y="-186"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_rHk9mT5iEeKxBbeee6LDTA" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Generalization" href="mmi:///#jgen%5Bjsrctype%5Ename=Level2Controller%5Bjcu%5Ename=Level2Controller.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=LevelController%5Bjcu%5Ename=LevelController.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D$uml.Generalization"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rHk9mj5iEeKxBbeee6LDTA" points="[0, 0, 0, -1586]$[0, 1586, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgPwj5iEeKxBbeee6LDTA" id="(0.49987873,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgPwz5iEeKxBbeee6LDTA" id="(0.40644637,0.0)"/>
+  </edges>
+  <edges xmi:id="_rHuuQj5iEeKxBbeee6LDTA" source="_q01njD5iEeKxBbeee6LDTA" target="_q0iFdD5iEeKxBbeee6LDTA">
+    <children xmi:id="_rHuuRT5iEeKxBbeee6LDTA" type="KindLabel">
+      <children xmi:id="_rHuuRz5iEeKxBbeee6LDTA" type="Stereotype"/>
+      <children xmi:id="_rHuuST5iEeKxBbeee6LDTA" type="Kind"/>
+      <children xmi:id="_rHuuSD5iEeKxBbeee6LDTA" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rHuuRj5iEeKxBbeee6LDTA" y="-186"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_rHuuQz5iEeKxBbeee6LDTA" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=Level2Controller%5Bjcu%5Ename=Level2Controller.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=LevelController%5Bjcu%5Ename=LevelController.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rHuuRD5iEeKxBbeee6LDTA" points="[0, 0, 0, -1586]$[0, 1586, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgPzD5iEeKxBbeee6LDTA" id="(0.49987873,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgPzT5iEeKxBbeee6LDTA" id="(0.40644637,0.0)"/>
+  </edges>
+  <edges xmi:id="_rHuuSj5iEeKxBbeee6LDTA" source="_q01njD5iEeKxBbeee6LDTA" target="_q0Y7hD5iEeKxBbeee6LDTA">
+    <children xmi:id="_rHuuTT5iEeKxBbeee6LDTA" type="KindLabel">
+      <children xmi:id="_rHuuTz5iEeKxBbeee6LDTA" type="Stereotype"/>
+      <children xmi:id="_rHuuUT5iEeKxBbeee6LDTA" type="Kind"/>
+      <children xmi:id="_rHuuUD5iEeKxBbeee6LDTA" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rHuuTj5iEeKxBbeee6LDTA" y="-186"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_rHuuSz5iEeKxBbeee6LDTA" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=Level2Controller%5Bjcu%5Ename=Level2Controller.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=Constants%5Bjcu%5Ename=Constants.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rHuuTD5iEeKxBbeee6LDTA" points="[0, 0, -7187, -18988]$[7188, 1586, 1, -17402]$[7188, 18988, 1, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQqAwj5iEeKxBbeee6LDTA" id="(0.666505,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQqAwz5iEeKxBbeee6LDTA" id="(0.3637532,0.0)"/>
+  </edges>
+  <edges xmi:id="_rHuuUj5iEeKxBbeee6LDTA" source="_q01nmj5iEeKxBbeee6LDTA" target="_q0iFdD5iEeKxBbeee6LDTA">
+    <children xmi:id="_rHuuVT5iEeKxBbeee6LDTA" type="KindLabel">
+      <children xmi:id="_rHuuVz5iEeKxBbeee6LDTA" type="Stereotype"/>
+      <children xmi:id="_rHuuWT5iEeKxBbeee6LDTA" type="Kind"/>
+      <children xmi:id="_rHuuWD5iEeKxBbeee6LDTA" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rHuuVj5iEeKxBbeee6LDTA" y="-186"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_rHuuUz5iEeKxBbeee6LDTA" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=IOController%5Bjcu%5Ename=IOController.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=LevelController%5Bjcu%5Ename=LevelController.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rHuuVD5iEeKxBbeee6LDTA" points="[0, 0, 2114, -11388]$[0, 5943, 2114, -5445]$[-2114, 11388, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQqAzD5iEeKxBbeee6LDTA" id="(0.49978346,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQqAzT5iEeKxBbeee6LDTA" id="(0.8922504,0.0)"/>
+  </edges>
+  <edges xmi:id="_rHuuWj5iEeKxBbeee6LDTA" source="_q01nmj5iEeKxBbeee6LDTA" target="_q0-xZD5iEeKxBbeee6LDTA">
+    <children xmi:id="_rHuuXT5iEeKxBbeee6LDTA" type="KindLabel">
+      <children xmi:id="_rHuuXz5iEeKxBbeee6LDTA" type="Stereotype"/>
+      <children xmi:id="_rHuuYT5iEeKxBbeee6LDTA" type="Kind"/>
+      <children xmi:id="_rHuuYD5iEeKxBbeee6LDTA" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rHuuXj5iEeKxBbeee6LDTA" y="-186"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_rHuuWz5iEeKxBbeee6LDTA" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=IOController%5Bjcu%5Ename=IOController.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=GameTimer%5Bjcu%5Ename=GameTimer.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rHuuXD5iEeKxBbeee6LDTA" points="[1, 0, 5685, -1586]$[-5684, 1586, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgP0j5iEeKxBbeee6LDTA" id="(0.040710263,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgP0z5iEeKxBbeee6LDTA" id="(0.5,0.0)"/>
+  </edges>
+  <edges xmi:id="_rHuuYj5iEeKxBbeee6LDTA" source="_q01nmj5iEeKxBbeee6LDTA" target="_q01nfj5iEeKxBbeee6LDTA">
+    <children xmi:id="_rHuuZT5iEeKxBbeee6LDTA" type="KindLabel">
+      <children xmi:id="_rHuuZz5iEeKxBbeee6LDTA" type="Stereotype"/>
+      <children xmi:id="_rHuuaT5iEeKxBbeee6LDTA" type="Kind"/>
+      <children xmi:id="_rHuuaD5iEeKxBbeee6LDTA" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rHuuZj5iEeKxBbeee6LDTA" y="-186"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_rHuuYz5iEeKxBbeee6LDTA" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=IOController%5Bjcu%5Ename=IOController.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=LevelFactory%5Bjcu%5Ename=LevelFactory.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rHuuZD5iEeKxBbeee6LDTA" points="[0, 0, 1, -1586]$[0, 1586, 1, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgP1D5iEeKxBbeee6LDTA" id="(0.06120976,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQgP1T5iEeKxBbeee6LDTA" id="(0.49986482,0.0)"/>
+  </edges>
+  <edges xmi:id="_rHuuaj5iEeKxBbeee6LDTA" source="_q01nmj5iEeKxBbeee6LDTA" target="_q01ncD5iEeKxBbeee6LDTA">
+    <children xmi:id="_rHuubT5iEeKxBbeee6LDTA" type="KindLabel">
+      <children xmi:id="_rHuubz5iEeKxBbeee6LDTA" type="Stereotype"/>
+      <children xmi:id="_rHuucT5iEeKxBbeee6LDTA" type="Kind"/>
+      <children xmi:id="_rHuucD5iEeKxBbeee6LDTA" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rHuubj5iEeKxBbeee6LDTA" y="-186"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_rHuuaz5iEeKxBbeee6LDTA" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=IOController%5Bjcu%5Ename=IOController.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=Weapons%5Bjcu%5Ename=Weapons.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rHuubD5iEeKxBbeee6LDTA" points="[1, 0, 14073, -40909]$[-9124, 1586, 4948, -39323]$[-13358, 7530, 714, -33379]$[-14072, 11388, 0, -29521]$[-14072, 40909, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQqAyj5iEeKxBbeee6LDTA" id="(0.020355131,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQqAyz5iEeKxBbeee6LDTA" id="(0.30281165,0.0)"/>
+  </edges>
+  <edges xmi:id="_rHuucj5iEeKxBbeee6LDTA" source="_q01nmj5iEeKxBbeee6LDTA" target="_q0r2gj5iEeKxBbeee6LDTA">
+    <children xmi:id="_rHuudT5iEeKxBbeee6LDTA" type="KindLabel">
+      <children xmi:id="_rHuudz5iEeKxBbeee6LDTA" type="Stereotype"/>
+      <children xmi:id="_rHuueT5iEeKxBbeee6LDTA" type="Kind"/>
+      <children xmi:id="_rHuueD5iEeKxBbeee6LDTA" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rHuudj5iEeKxBbeee6LDTA" y="-186"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_rHuucz5iEeKxBbeee6LDTA" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=IOController%5Bjcu%5Ename=IOController.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=Animals%5Bjcu%5Ename=Animals.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rHuudD5iEeKxBbeee6LDTA" points="[1, 0, 1216, -40909]$[4723, 1586, 5938, -39323]$[4723, 39322, 5938, -1587]$[-1215, 40909, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQqAxj5iEeKxBbeee6LDTA" id="(0.83326113,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQqAxz5iEeKxBbeee6LDTA" id="(0.8332919,0.0)"/>
+  </edges>
+  <edges xmi:id="_rHuuej5iEeKxBbeee6LDTA" source="_q01nmj5iEeKxBbeee6LDTA" target="_q0Y7hD5iEeKxBbeee6LDTA">
+    <children xmi:id="_rHuufT5iEeKxBbeee6LDTA" type="KindLabel">
+      <children xmi:id="_rHuufz5iEeKxBbeee6LDTA" type="Stereotype"/>
+      <children xmi:id="_rHuugT5iEeKxBbeee6LDTA" type="Kind"/>
+      <children xmi:id="_rHuugD5iEeKxBbeee6LDTA" type="Name"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rHuufj5iEeKxBbeee6LDTA" y="-186"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLConnectorStyle" xmi:id="_rHuuez5iEeKxBbeee6LDTA" lineWidth="1" showStereotype="Text"/>
+    <element xmi:type="uml:Usage" href="mmi:///#jdep%5Bjsrctype%5Ename=IOController%5Bjcu%5Ename=IOController.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D%5Bjsrctype%5Ename=Constants%5Bjcu%5Ename=Constants.java%5Bjpack%5Ename=%5Bjsrcroot%5Esrcfolder=src%5Bproject%5Eid=SEProject%5D%5D%5D%5D%5D$uml.Usage"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rHuufD5iEeKxBbeee6LDTA" points="[0, 0, -2163, -28790]$[5084, 11388, 2921, -17402]$[5084, 27203, 2921, -1587]$[2163, 28790, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQqAyD5iEeKxBbeee6LDTA" id="(0.6665223,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rQqAyT5iEeKxBbeee6LDTA" id="(0.6817848,0.0)"/>
+  </edges>
+</notation:Diagram>

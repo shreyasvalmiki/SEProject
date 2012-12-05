@@ -113,6 +113,7 @@ public class IOController {
             	//else if(command == 4)
                 else if(command.equalsIgnoreCase("exit"))
             	{ 
+                	System.out.println("The hunter left the forest!");
             		System.exit(1);
             	}
                 else

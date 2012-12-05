@@ -18,7 +18,8 @@ public class Level3Controller extends LevelController {
     }
     public int hunt(String animal,String weapon, long time, int turnCount){
     	int result = super.hunt(animal, weapon, time, turnCount);
-    	if(result == Constants.WEAPON_USED && turnCount == 2){
+    	//if(result == Constants.WEAPON_USED && turnCount == 2){
+    	if(result == Constants.WEAPON_USED && wrongAttemptCount == 2){
     		isLoser = true;
     		result = Constants.LOST;
     	}
