@@ -14,10 +14,13 @@ public class LevelController {
     protected AnimalWeaponMapper mapper;
     protected Animals animals = new Animals();
     protected Weapons weapons = new Weapons();
+ 
     protected HashMap<String,Integer> animalNameList = new HashMap<String, Integer>();
     protected HashMap<Integer,String> animalIndexList = new HashMap<Integer, String>();
+ 
     protected HashMap<String,Integer> weaponNameList = new HashMap<String, Integer>();
     protected HashMap<Integer,String> weaponIndexList = new HashMap<Integer, String>();
+    
     protected boolean isLoser = false;
     protected boolean isWinner = false;
     protected int wrongAttemptCount;
@@ -25,13 +28,15 @@ public class LevelController {
     public HashMap<Integer,ArrayList<Integer>> animalWeaponMap = new HashMap<Integer, ArrayList<Integer>>();
     public HashMap<String,ArrayList<String>> huntMap = new HashMap<String, ArrayList<String>>();
     
-    public HashMap<Integer,ArrayList<Integer>> initMap = new HashMap<Integer, ArrayList<Integer>>();
+    //initial animalWeaponMap
+    public HashMap<Integer,ArrayList<Integer>> initMap = new HashMap<Integer, ArrayList<Integer>>(); 
     protected int animalsLeft;
     protected boolean isTimeNeeded;
     
     public LevelController(){   
         mapper = new AnimalWeaponMapper();
     }
+    
     @SuppressWarnings("unchecked")
 	protected void initLists(){
     	isLoser = false;
@@ -46,6 +51,8 @@ public class LevelController {
         weaponNameList = weapons.getNameToIndexList();
         weaponIndexList = weapons.getWeaponList();
     }
+    
+    //check if winner
     public boolean hasWon(){
     	if(animalWeaponMap.size() == 0){
     		return true;
@@ -55,6 +62,8 @@ public class LevelController {
     		return false;
     	}
     }
+    
+    //check if loser
     public boolean hasLost(){
     	for(ArrayList<Integer> i:animalWeaponMap.values()){
     		if(i.size() == 0){
@@ -64,11 +73,14 @@ public class LevelController {
     	return isLoser;
     }
     
+    //check if correct weapon used and update animalWeaponMap and huntMap accordingly
     public int hunt(String animal,String weapon, long time, int turnCount){
     	ArrayList<Integer> currChecklist = new ArrayList<Integer>();
     	ArrayList<String> strChecklist = new ArrayList<String>();
+    	
     	currChecklist = animalWeaponMap.get(animals.getNameToIndexList().get(animal));
     	strChecklist = huntMap.get(animal);
+    	
     	if(!strChecklist.contains(weapon)){
     		return Constants.WEAPON_NOT_FOUND;
     	}
@@ -84,7 +96,8 @@ public class LevelController {
     	}
     }
     
-    protected void updateAnimalWeaponMap(Integer animal,Integer weapon){
+    //removes animal and the weapon from remaining animals
+    protected void updateAnimalWeaponMap(Integer animal, Integer weapon){
     	animalWeaponMap.remove(animal);
     	ArrayList<Integer> weaponCheck = new ArrayList<Integer>();
     	for(Integer i:animalWeaponMap.keySet()){
@@ -96,6 +109,7 @@ public class LevelController {
     	}
     }
     
+    //remove animal and set the weapon to "" for other animals
     protected void updateHuntMap(String animal, String weapon){
     	huntMap.remove(animal);
     	ArrayList<String> weaponCheck = new ArrayList<String>();

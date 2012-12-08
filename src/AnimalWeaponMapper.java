@@ -11,8 +11,14 @@ import java.util.*;
  * @author Shreyas Valmiki
  */
 public final class AnimalWeaponMapper {
+	//map of animals and their weapons
+	//always up to date
     private HashMap<Integer,ArrayList<Integer>> animalWeaponMap = new HashMap<Integer, ArrayList<Integer>>();
-    private HashMap<Integer,Integer> animalToWeaponNo = new HashMap<Integer, Integer>();
+    //number of weapons per animal
+    //can leave out used weapons depending on level
+    private HashMap<Integer,Integer> animalToWeaponNo = new HashMap<Integer, Integer>(); 
+    
+    //same as animalWeaponMap but as a matrix with names instead of numbers
     private HashMap<String,ArrayList<String>> huntMap = new HashMap<String, ArrayList<String>>();
     
     private Animals animals = new Animals();
@@ -21,19 +27,20 @@ public final class AnimalWeaponMapper {
     private HashMap<Integer,String> animalList = new HashMap<Integer, String>();
     private HashMap<Integer,String> weaponList = new HashMap<Integer, String>();
     
-    private ArrayList<Integer> indexInsertedList = new ArrayList<Integer>();
+    //checker for values added in animalToWeaponNo
+    private ArrayList<Integer> indexInsertedList = new ArrayList<Integer>(); 
     private int animalListSize = 0;
     private int weaponListSize = 0;
 
-    public AnimalWeaponMapper(){
-        
-    }
+    public AnimalWeaponMapper(){}
+    
     AnimalWeaponMapper(int huntedWith2,int huntedWith3,int huntedWith4){
         initMap();   
         setAnimalToWeaponRatio(huntedWith2,huntedWith3,huntedWith4);
         computeAndSetHuntMap();
     }
     
+    //Give each animal the complete list of weapons in animalWeaponMap
     private void initMap(){
         animalList = animals.getAnimalList();
         weaponList = weapons.getWeaponList();
@@ -51,11 +58,14 @@ public final class AnimalWeaponMapper {
         }
     }
     
+    //Set up how many weapons each animal can have
     private void setAnimalToWeaponRatio(int huntedWith2,int huntedWith3,int huntedWith4){
     	//test
     	//System.out.println("in setAnimalToWeaponRatio");
         int total = huntedWith2 + huntedWith3 + huntedWith4;
-        
+        //huntedwith2 - how many animals with 2 weapons
+        //huntedwith3 - how many animals with 3 weapons
+        //...
         
         if(total < animalListSize)
         {
@@ -64,13 +74,15 @@ public final class AnimalWeaponMapper {
         
         //test
     	//System.out.println("in setAnimalToWeaponRatio");
-        fillRatioList(2,huntedWith2);
-        fillRatioList(3,huntedWith3);
-        fillRatioList(4,huntedWith4);
+        fillRatioList(2,huntedWith2); //choose which animals get 2 weapons
+        fillRatioList(3,huntedWith3); //choose which animals get 3 weapons
+        fillRatioList(4,huntedWith4); //...
       //test
     	//System.out.println("out setAnimalToWeaponRatio");
     }
     
+    //randomly select the animals which get weaponToAnimalNo of weapons
+    //huntTimes represents the number of animals to select
     private void fillRatioList(int weaponToAnimalNo,int huntTimes){
     	 //test
     	//System.out.println("in fillRatioList");
@@ -91,7 +103,8 @@ public final class AnimalWeaponMapper {
     	//System.out.println("out fillRatioList");
     }
     
-    private void computeAndSetHuntMap(){
+    //first get the animalWeaponMap then set the huntMap from it
+    private void computeAndSetHuntMap(){ 
     	//test
     	//System.out.println("in computeAndSetHuntMap");
     	
@@ -105,13 +118,16 @@ public final class AnimalWeaponMapper {
         int randIndex;
         
         int count = 0;
-        while(mandatoryList.size() < weaponListSize){
+        
+        //ensure at least 1 distinct solution?
+        while(mandatoryList.size() < weaponListSize){ 
         	int randNo = randMand.nextInt(weaponListSize)+1;
         	if(!mandatoryList.keySet().contains(randNo)){
         		mandatoryList.put(randNo,++count);
         	}
         }
-        for(int i: animalToWeaponNo.keySet()){
+        //take out weapons randomly from each animal based on the number of weapons set for them
+        for(int i: animalToWeaponNo.keySet()){ 
             ratio = animalToWeaponNo.get(i);
             ArrayList<Integer> randList = new ArrayList<Integer>();
             ArrayList<Integer> wList = new ArrayList<Integer>();
@@ -135,7 +151,9 @@ public final class AnimalWeaponMapper {
         //System.out.println("in computeAndSetHuntMap");
     }
     
-    private void setHuntMap(){
+    
+    //create the huntMap which probably is used for display
+    private void setHuntMap(){ 
     	//test
     	//System.out.println("in setHuntMap");
         for(int key: animalWeaponMap.keySet()){
@@ -159,7 +177,9 @@ public final class AnimalWeaponMapper {
         //System.out.println("in setHuntMap");
         
     }
-    private void cleanAnimalWeaponMap(){
+    
+    //take out -1 from animalWeaponMap meaning only actual weapons remain
+    private void cleanAnimalWeaponMap(){ 
     	ArrayList<Integer> tempArray = new ArrayList<Integer>();
     	for(Integer i:animalWeaponMap.keySet()){
     		tempArray = animalWeaponMap.get(i);

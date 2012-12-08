@@ -8,6 +8,8 @@
  *
  * @author Shreyas Valmiki
  */
+
+//used to initialize to the correct LevelController
 public class LevelFactory {
     public static LevelController getController(int level)
     {

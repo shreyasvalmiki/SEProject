@@ -16,6 +16,7 @@ public class Level3Controller extends LevelController {
         super.isTimeNeeded = true;
         super.initLists();
     }
+    
     public int hunt(String animal,String weapon, long time, int turnCount){
     	int result = super.hunt(animal, weapon, time, turnCount);
     	//if(result == Constants.WEAPON_USED && turnCount == 2){
@@ -44,6 +45,7 @@ public class Level3Controller extends LevelController {
 //    	boolean res = super.hasLost();
 //    	return res || isLoser;
 //    }
+    
     protected void updateHuntMap(String animal, String weapon){
     	huntMap.remove(animal);
     }
