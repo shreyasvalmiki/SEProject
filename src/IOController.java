@@ -11,7 +11,7 @@ public class IOController {
 	private static Scanner input = new Scanner(System.in);
 	private static boolean hasWon = false;
 	private static boolean hasLost = false;
-	private static LevelController level = new LevelController(); //why initialize thrice?
+	private static LevelController level; //why initialize thrice?
 	private static int levelNo = 1;
 	private static Animals animals = new Animals();
 	private static Weapons weapons = new Weapons();
@@ -64,8 +64,8 @@ public class IOController {
                 }
             }while(levelNo != 1 && levelNo != 2 && levelNo!=3);
 
-            //dont need the next line
-            level = new LevelController();
+            
+            //level = new LevelController();
             level = LevelFactory.getController(levelNo);
             
             //testing
@@ -233,16 +233,16 @@ public class IOController {
     	}
     	else
     	{
+    		timer.stop();
+    		if(level.isTimeNeeded){
+				System.out.println("Time taken to complete(in seconds): " + timeInSecs);
+			}
     		if(resultKey == Constants.LOST){
     			hasLost = true;
     			System.out.println(resultMap.get(Constants.LOST));
     		}
     		else if (resultKey == Constants.WON || resultKey == Constants.WON_WITH_TIME){
     			hasWon = true;
-    			timer.stop();
-    			if(level.isTimeNeeded){
-    				System.out.println("Time taken to complete(in seconds): " + timeInSecs);
-    			}
     			System.out.println(resultMap.get(Constants.WON));
     			if (resultKey == Constants.WON_WITH_TIME){
     				System.out.println(resultMap.get(Constants.WON_WITH_TIME));
