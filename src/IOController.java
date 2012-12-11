@@ -11,7 +11,7 @@ public class IOController {
 	private static Scanner input = new Scanner(System.in);
 	private static boolean hasWon = false;
 	private static boolean hasLost = false;
-	private static LevelController level = new LevelController();
+	private static LevelController level = new LevelController(); //why initialize thrice?
 	private static int levelNo = 1;
 	private static Animals animals = new Animals();
 	private static Weapons weapons = new Weapons();
@@ -25,7 +25,7 @@ public class IOController {
 		resultMap.put(Constants.CONTINUE, "Continue");
 		resultMap.put(Constants.WON, "You Win!");
 		resultMap.put(Constants.LOST, "You Lose!");
-		resultMap.put(Constants.WON_WITH_TIME, "You have won a medal, you are the ‘King of the Jungle’");
+		resultMap.put(Constants.WON_WITH_TIME, "You have won a medal, you are the ï¿½King of the Jungleï¿½");
 		resultMap.put(Constants.WEAPON_NOT_FOUND, "The weapon you selected cannot be used to kill this animal! Select another weapon:");
 		resultMap.put(Constants.WEAPON_USED, "The weapon has been used! Choose another weapon.");
 		resultMap.put(Constants.ANIMAL_KILLED, "The animal has been killed!");
@@ -44,7 +44,7 @@ public class IOController {
         	hasLost = false;
             do
             {
-            	levelNo = 1;
+            	//levelNo = 1; //not needed
             	try
                 {
 	                if(levelNo != 1 && levelNo != 2 && levelNo!=3)
@@ -63,6 +63,8 @@ public class IOController {
                     levelNo = 0;
                 }
             }while(levelNo != 1 && levelNo != 2 && levelNo!=3);
+
+            //dont need the next line
             level = new LevelController();
             level = LevelFactory.getController(levelNo);
             
@@ -81,9 +83,11 @@ public class IOController {
 //            	System.out.println("Enter 4 to exit");
             	//command = input.nextInt();
             	
-            	System.out.print("\nEnter Command:");
+            	System.out.print("\nEnter Command (list animals, list weapons, hunt, or exit):");
             	System.out.println("\t");
+            	
             	//Hack to make the phrases work
+            	//Used to capture trailing newline character
             	if(!isNotReentry){
             		command = input.nextLine();
             	}
@@ -105,7 +109,7 @@ public class IOController {
                     if (!startedHunting)
                     {
                         startedHunting = true;
-                        timer.start();
+                        timer.start(); // started every time but not always displayed
                     }
                     disp.hunt();
                     isNotReentry = false;
@@ -124,6 +128,7 @@ public class IOController {
             } 
             System.out.println("Replay the game?[Y/N]");
             String exitComm = new String();
+            
             do{
             	exitComm = disp.inputString();
 	            if(exitComm.equalsIgnoreCase("n")){
@@ -140,6 +145,8 @@ public class IOController {
             }while(!exitComm.equalsIgnoreCase("y")&& !exitComm.equalsIgnoreCase("n"));
         }
     }
+
+    //display values which only exist in first argument
     public void displayCurrList(ArrayList<String> list,ArrayList<String> exList){
     	System.out.println();
         for(String s: list)
@@ -150,6 +157,8 @@ public class IOController {
         }
         System.out.println();
     }
+
+    //display all non-empty values in the map
     public void displayList(ArrayList<String> map){
         System.out.println();
         for(String s: map)
@@ -160,6 +169,7 @@ public class IOController {
         }
         System.out.println();
     }
+    
     
     public void hunt(){
     	String animal = new String();
@@ -174,6 +184,8 @@ public class IOController {
     	//test
     	System.out.print("Please select an animal:");
     	animal = inputString();
+    	
+    	//check for valid animal entry
     	do{
     		if(!level.huntMap.keySet().contains(animal)){
     			if (animals.getAnimalList().containsValue(animal)){
@@ -191,12 +203,15 @@ public class IOController {
     			displayList(level.huntMap.get(animal));
     		}
     	}while(!isAnimalSelected); 
+    	
     	turnCount = 0;
     	System.out.print("Please select a weapon:");
     	weapon = inputString();
+    	
     	do{
     		timeInSecs = timer.getElapsedTimeSecs();
     		++turnCount;
+    		//let the level controller determine the outcome
     		resultKey = level.hunt(animal, weapon, timeInSecs, turnCount);
     		if(resultKey == Constants.WEAPON_NOT_FOUND || resultKey == Constants.WEAPON_USED){
     			isDone = false;
@@ -238,11 +253,13 @@ public class IOController {
     	//}
     }
     
+  
     public void displayHuntGrid(){
     	HashMap<String,Integer> animalToIndex = new HashMap<String, Integer>();
     	animalToIndex = animals.getNameToIndexList();
         for(String s: level.huntMap.keySet()){
-        	if(level.animalWeaponMap.keySet().contains(animalToIndex.get(s))){
+        	//always check whether the animal exists in animalWeaponMap
+        	if(level.animalWeaponMap.keySet().contains(animalToIndex.get(s))){  
         		if(s.length()<=7)
         		{
         			System.out.print("\t"+s+"\t");
@@ -258,8 +275,10 @@ public class IOController {
         	}
         }
         System.out.println("\n\t-------------------------------------------------------------------------");
+        //weapon display for current animal
         for(int i = 0; i<weapons.getWeaponCount();++i){
         	for(String s: level.huntMap.keySet()){
+        		//always check whether the animal exists in animalWeaponMap
             	if(level.animalWeaponMap.keySet().contains(animalToIndex.get(s))){
             		if(level.huntMap.get(s).get(i).length()<=7)
             		{
