@@ -63,36 +63,43 @@ public final class AnimalWeaponMapper {
 
 	//Set up how many weapons each animal can have
 	private void setAnimalToWeaponRatio(int huntedWith2,int huntedWith3,int huntedWith4){
-		int total = huntedWith2 + huntedWith3 + huntedWith4;
 
+		int total = huntedWith2 + huntedWith3 + huntedWith4;
+        //huntedwith2 - how many animals with 2 weapons
+        //huntedwith3 - how many animals with 3 weapons
+        //...		
 
 		if(total < animalListSize)
 		{
 			huntedWith3 += animalList.size() - total;
 		}
 		indexInsertedList.clear();
-		fillAtoWRatioList(2,huntedWith2);
-		fillAtoWRatioList(3,huntedWith3);
-		fillAtoWRatioList(4,huntedWith4);
+		fillAtoWRatioList(2,huntedWith2); //choose which animals get 2 weapons
+		fillAtoWRatioList(3,huntedWith3); //choose which animals get 3 weapons
+		fillAtoWRatioList(4,huntedWith4); //...
 
 	}
 
+	//Set up how many animals each weapon can be associated with
 	private void setWeaponToAnimalRatio(int hunt2,int hunt3,int hunt4){
 
 		int total = hunt2 + hunt3 + hunt4;
-
+		//hunt2 - how many weapons which can be used for 2 animals
+        //hunt3 - how many weapons which can be used for 3 animals
+        //...
 
 		if(total < weaponListSize)
 		{
 			hunt3 += weaponList.size() - total;
 		}
 		indexInsertedList.clear();
-		fillWtoARatioList(2,hunt2);
-		fillWtoARatioList(3,hunt3);
-		fillWtoARatioList(4,hunt4);
+		fillWtoARatioList(2,hunt2); //choose which weapons get 2 animals
+		fillWtoARatioList(3,hunt3); //choose which weapons get 3 animals
+		fillWtoARatioList(4,hunt4); //...
 	}
 
-
+	//randomly select the weapons which get animalToWeaponNoList of animals
+    //huntTimes represents the number of weapons to select
 	private void fillAtoWRatioList(int weaponToAnimalNo,int huntTimes){
 		Random rand = new Random();
 		for(int i = 0; i<huntTimes;i++){
@@ -108,7 +115,8 @@ public final class AnimalWeaponMapper {
 		}
 	}
 
-
+	//randomly select the animals which get weaponToAnimalNoList of weapons
+    //huntTimes represents the number of animals to select
 	private void fillWtoARatioList(int animalToWeaponNo,int huntTimes){
 		Random rand = new Random();
 		
@@ -125,7 +133,7 @@ public final class AnimalWeaponMapper {
 		}
 	}
 
-
+	//first get the animalWeaponMap then set the huntMap from it
 	private void computeAndSetHuntMap(){
 		HashMap<Integer,Integer> mandatoryList = new HashMap<Integer, Integer>();
 		boolean isRowDone = false;
@@ -135,12 +143,15 @@ public final class AnimalWeaponMapper {
 		int randIndex;
 
 		int count = 0;
+		//ensure at least 1 distinct solution?
 		while(mandatoryList.size() < weaponListSize){
 			int randNo = randMand.nextInt(weaponListSize)+1;
 			if(!mandatoryList.keySet().contains(randNo)){
 				mandatoryList.put(randNo,++count);
 			}
 		}
+		//take out weapons randomly from each animal based on the number of weapons set for them
+		//and if the each weapons' limit has been exhausted	
 		for(int i: animalToWeaponNoList.keySet()){
 			ratio = animalToWeaponNoList.get(i);
 			ArrayList<Integer> randList = new ArrayList<Integer>();
@@ -162,7 +173,8 @@ public final class AnimalWeaponMapper {
 		}
 		setHuntMap();
 	}
-
+	
+	//create the huntMap which probably is used for display
 	private void setHuntMap(){
 		for(int key: animalWeaponMap.keySet()){
 			ArrayList<String> huntWeaponNames = new ArrayList<String>();
@@ -182,6 +194,8 @@ public final class AnimalWeaponMapper {
 		}
 		cleanAnimalWeaponMap();
 	}
+	
+	//take out -1 from animalWeaponMap meaning only actual weapons remain
 	private void cleanAnimalWeaponMap(){
 		ArrayList<Integer> tempArray = new ArrayList<Integer>();
 		for(Integer i:animalWeaponMap.keySet()){
