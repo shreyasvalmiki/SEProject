@@ -22,6 +22,12 @@ public final class AnimalWeaponMapper {
     
     //same as animalWeaponMap but as a matrix with names instead of numbers
     private HashMap<String,ArrayList<String>> huntMap = new HashMap<String, ArrayList<String>>();
+	private HashMap<Integer,Integer> mandatoryList = new HashMap<Integer, Integer>();
+	
+	//Number of animals hunted per weapon and number of weapons assigned per weapon
+	private int huntedWith2;
+	private int huntedWith3;
+	private int huntedWith4;
     
     private Animals animals = new Animals();
     private Weapons weapons = new Weapons();
@@ -33,16 +39,34 @@ public final class AnimalWeaponMapper {
     private ArrayList<Integer> indexInsertedList = new ArrayList<Integer>(); 
     private int animalListSize = 0;
     private int weaponListSize = 0;
+    
+    //set if a possibility of infinite loop exists
+    private boolean isInfiniteLoop = false;
 
 	public AnimalWeaponMapper(){}
 
 	AnimalWeaponMapper(int huntedWith2,int huntedWith3,int huntedWith4){
-		initMap();   
-		setAnimalToWeaponRatio(huntedWith2,huntedWith3,huntedWith4);
-		setWeaponToAnimalRatio(huntedWith2,huntedWith3,huntedWith4);
-		computeAndSetHuntMap();
+		this.huntedWith2 = huntedWith2;
+		this.huntedWith3 = huntedWith3;
+		this.huntedWith4 = huntedWith4;   
+		initAll();
 	}
-
+	
+	private void initAll(){
+		do{
+			mandatoryList.clear();
+			animalWeaponMap.clear();
+			animalToWeaponNoList.clear();
+			weaponToAnimalNoList.clear();
+			huntMap.clear();
+			isInfiniteLoop = false;
+			initMap();   
+			setAnimalToWeaponRatio(huntedWith2,huntedWith3,huntedWith4);
+			setWeaponToAnimalRatio(huntedWith2,huntedWith3,huntedWith4);
+			computeAndSetHuntMap();
+		}while(isInfiniteLoop);
+	}
+	
  	//Give each animal the complete list of weapons in animalWeaponMap
 	private void initMap(){
 		animalList = animals.getAnimalList();
@@ -119,7 +143,7 @@ public final class AnimalWeaponMapper {
     //huntTimes represents the number of animals to select
 	private void fillWtoARatioList(int animalToWeaponNo,int huntTimes){
 		Random rand = new Random();
-		
+
 		for(int i = 0; i<huntTimes;i++){
 			boolean hasInserted = false;
 			while(!hasInserted){
@@ -135,23 +159,19 @@ public final class AnimalWeaponMapper {
 
 	//first get the animalWeaponMap then set the huntMap from it
 	private void computeAndSetHuntMap(){
-		HashMap<Integer,Integer> mandatoryList = new HashMap<Integer, Integer>();
 		boolean isRowDone = false;
-		Random rand = new Random();
+		///Random rand = new Random();
 		Random randMand = new Random();
 		int ratio = 0;
 		int randIndex;
 
 		int count = 0;
-		//ensure at least 1 distinct solution?
 		while(mandatoryList.size() < weaponListSize){
 			int randNo = randMand.nextInt(weaponListSize)+1;
 			if(!mandatoryList.keySet().contains(randNo)){
 				mandatoryList.put(randNo,++count);
 			}
 		}
-		//take out weapons randomly from each animal based on the number of weapons set for them
-		//and if the each weapons' limit has been exhausted	
 		for(int i: animalToWeaponNoList.keySet()){
 			ratio = animalToWeaponNoList.get(i);
 			ArrayList<Integer> randList = new ArrayList<Integer>();
@@ -159,12 +179,23 @@ public final class AnimalWeaponMapper {
 			wList = animalWeaponMap.get(i);
 			isRowDone = false;
 			while(!isRowDone){
-				randIndex = rand.nextInt(weaponToAnimalNoList.size()) + 1; 
+				//randIndex = rand.nextInt(weaponToAnimalNoList.size()) + 1;
+				List<Object> arr = new ArrayList<Object>();
+				arr = Arrays.asList(weaponToAnimalNoList.keySet().toArray());
+				Collections.shuffle(arr);
+				randIndex = (Integer) arr.get(0);
+				if(isInfiniteLoop(randList,i)){
+					isInfiniteLoop = true;
+					return;
+				}
 				//if(!randList.contains(randIndex) && (weaponListSize-randList.size()) < ratio && mandatoryList.get(i) != randIndex){
 				if(weaponToAnimalNoList.get(randIndex)>0 &&!randList.contains(randIndex) && (weaponListSize-randList.size()) > ratio && mandatoryList.get(i) != randIndex){
 					randList.add(randIndex);
 					wList.set(wList.indexOf(randIndex), -1);
 					weaponToAnimalNoList.put(randIndex, weaponToAnimalNoList.get(randIndex)-1);
+					if(weaponToAnimalNoList.get(randIndex) == 0){
+						weaponToAnimalNoList.remove(randIndex);
+					}
 				}
 				if((weaponListSize-randList.size()) == ratio){
 					isRowDone = true;
@@ -173,7 +204,7 @@ public final class AnimalWeaponMapper {
 		}
 		setHuntMap();
 	}
-	
+
 	//create the huntMap which probably is used for display
 	private void setHuntMap(){
 		for(int key: animalWeaponMap.keySet()){
@@ -194,7 +225,7 @@ public final class AnimalWeaponMapper {
 		}
 		cleanAnimalWeaponMap();
 	}
-	
+
 	//take out -1 from animalWeaponMap meaning only actual weapons remain
 	private void cleanAnimalWeaponMap(){
 		ArrayList<Integer> tempArray = new ArrayList<Integer>();
@@ -207,6 +238,27 @@ public final class AnimalWeaponMapper {
 
 		}
 	}
+	
+	//checks if there is a possibility of an infinite loop a point in time
+	private boolean isInfiniteLoop(ArrayList<Integer> randList, int animalId){
+		for(int i:weaponToAnimalNoList.keySet()){
+			if(!randList.contains(i) && !(mandatoryList.get(animalId) == i && weaponToAnimalNoList.get(i)<2)&& !(isOtherElemsFilled(randList,i)&& mandatoryList.get(animalId) == i)){
+				return false;
+			}
+		}
+		return true;
+	}
+	
+	//Checks if the rest of the weapons in the array are filled other than the weapon sent
+	private boolean isOtherElemsFilled(ArrayList<Integer>randList, int weaponId){
+		for(int i:weaponToAnimalNoList.keySet()){
+			if(i!=weaponId && !randList.contains(i)){
+				return false;
+			}
+		}
+		return true;
+	}
+	
 	public HashMap<Integer,ArrayList<Integer>> getAnimalWeaponMap(){
 		return animalWeaponMap;
 	}
@@ -215,4 +267,3 @@ public final class AnimalWeaponMapper {
 		return huntMap;
 	}
 }
-
