@@ -1,13 +1,4 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 
-
-/**
- *
- * @author Shreyas Valmiki
- */
 
 //used to initialize to the correct LevelController
 public class LevelFactory {
