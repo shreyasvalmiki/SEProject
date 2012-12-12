@@ -1,13 +1,4 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 
-
-/**
- *
- * @author Shreyas Valmiki
- */
 public class GameTimer {
     private long startTime = 0;
     private long stopTime = 0;
