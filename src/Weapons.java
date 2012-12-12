@@ -1,15 +1,7 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 
 import java.util.HashMap;
 
-/**
- *
- * @author Shreyas Valmiki
- */
+
 public class Weapons {
     private HashMap<Integer,String> weaponList = new HashMap<Integer, String>();
     private HashMap<String,Integer> nameToIndexList = new HashMap<String, Integer>();

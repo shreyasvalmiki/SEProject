@@ -1,15 +1,7 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 
 import java.util.*;
 
-/**
- *
- * @author Shreyas Valmiki
- */
+
 public final class AnimalWeaponMapper {
 	//map of animals and their weapons
 	//always up to date
@@ -166,30 +158,34 @@ public final class AnimalWeaponMapper {
 		int randIndex;
 
 		int count = 0;
+		//ensure at least 1 distinct solution?
 		while(mandatoryList.size() < weaponListSize){
 			int randNo = randMand.nextInt(weaponListSize)+1;
 			if(!mandatoryList.keySet().contains(randNo)){
 				mandatoryList.put(randNo,++count);
 			}
 		}
+		//take out weapons randomly from each to satisfy the animal and weapon limits
 		for(int i: animalToWeaponNoList.keySet()){
 			ratio = animalToWeaponNoList.get(i);
 			ArrayList<Integer> randList = new ArrayList<Integer>();
-			ArrayList<Integer> wList = new ArrayList<Integer>();
+			ArrayList<Integer> wList;
 			wList = animalWeaponMap.get(i);
 			isRowDone = false;
+			//loop until ratio is satisfied
 			while(!isRowDone){
-				//randIndex = rand.nextInt(weaponToAnimalNoList.size()) + 1;
+				//get random number
 				List<Object> arr = new ArrayList<Object>();
 				arr = Arrays.asList(weaponToAnimalNoList.keySet().toArray());
 				Collections.shuffle(arr);
 				randIndex = (Integer) arr.get(0);
+				//ensure the randIndex does eventually produce an end result
 				if(isInfiniteLoop(randList,i)){
 					isInfiniteLoop = true;
 					return;
 				}
-				//if(!randList.contains(randIndex) && (weaponListSize-randList.size()) < ratio && mandatoryList.get(i) != randIndex){
-				if(weaponToAnimalNoList.get(randIndex)>0 &&!randList.contains(randIndex) && (weaponListSize-randList.size()) > ratio && mandatoryList.get(i) != randIndex){
+				//remove weapon from animalWeaponList if eligible
+				if(weaponToAnimalNoList.get(randIndex)>0 && !randList.contains(randIndex) && (weaponListSize-randList.size()) > ratio && mandatoryList.get(i) != randIndex){
 					randList.add(randIndex);
 					wList.set(wList.indexOf(randIndex), -1);
 					weaponToAnimalNoList.put(randIndex, weaponToAnimalNoList.get(randIndex)-1);
@@ -202,10 +198,11 @@ public final class AnimalWeaponMapper {
 				}
 			}
 		}
+		//Fill the huntMap based on animalWeaponMap
 		setHuntMap();
 	}
 
-	//create the huntMap which probably is used for display
+	//create the huntMap which is used for display purposes
 	private void setHuntMap(){
 		for(int key: animalWeaponMap.keySet()){
 			ArrayList<String> huntWeaponNames = new ArrayList<String>();
